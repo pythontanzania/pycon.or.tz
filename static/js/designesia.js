@@ -1280,9 +1280,11 @@
       if ($(this).is(":checked")) {
         $(".opt-1").css("display", "none");
         $(".opt-2").css("display", "inline-block");
+        $(".currency").text("TZS");
       } else {
         $(".opt-2").css("display", "none");
         $(".opt-1").css("display", "inline-block");
+        $(".currency").text("USD");
       }
     });
   }
