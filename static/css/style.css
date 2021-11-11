@@ -1,37 +1,18 @@
-/* ================================================== */
-
-
-/* CoSpace
-/* created by designesia
-
-@charset "utf-8";
-
-/* ================================================== */
-
-
-/* import custom fonts */
-
-
-/* ================================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
-
-/* ================================================== */
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap');
 
 
 /* import fonts icon */
 
-
-/* ================================================== */
-
-@import url("../fonts/font-awesome/css/font-awesome.css");
+@import url("../fonts/font-awesome/font-awesome.css");
 @import url("../fonts/elegant_font/HTML_CSS/style.css");
 @import url("../fonts/et-line-font/style.css");
 @import url("../fonts/icofont/icofont.min.css");
+@import url("./base.css");
 
 * {
-    --body-font: "Work Sans", Helvetica, Arial, sans-serif;
-    --title-font: "Work Sans", Helvetica, Arial, sans-serif;
+    --body-font: 'Maven Pro', sans-serif;
+    --title-font: 'Maven Pro', sans-serif;
 }
 
 /* ================================================== */
@@ -2869,16 +2850,16 @@ a.btn-main:visited,
 input[type=button].btn-main,
 a.btn-line {
     text-align: center;
-    color: #fff;
+    /* color: #fff; */
     border-radius: 0px;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
-    outline: 0;
+    /* outline: 0; */
     font-weight: 800;
-    text-decoration: none;
-    padding: 8px 40px;
+    /* text-decoration: none; */
+    /* padding: 8px 40px; */
     font-size: 14px;
-    border: none;
+    /* border: none; */
 }
 
 a.btn-line,
@@ -2906,7 +2887,9 @@ a.btn-main.btn-white {
 
 header a.btn-main,
 header a.btn-line {
-    padding: 6px 20px !important;
+    padding-right:1.5rem!important;padding-left:1.5rem!important;
+    padding-top:.5rem!important;padding-bottom:.5rem!important;
+    border-width:5px!important;
 }
 
 header a.btn-main i{
@@ -15940,8 +15923,8 @@ img {
     }
 
     header a.btn-main{
-    padding: 7px 12px !important;    
-    border-radius: 2px !important;
+    /* padding: 7px 12px !important;    
+    border-radius: 2px !important; */
     margin-top: -1px;
     margin-right: -10px;
     }

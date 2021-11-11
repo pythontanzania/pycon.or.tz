@@ -1,33 +1,46 @@
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-body {
-  margin-bottom: 60px; /* Margin bottom by footer height */
+.btn-cta {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  border-radius: 0;
+  background-color: transparent;
+  border: solid 5px #000;
+  font-weight: 800;
+  box-shadow: 0.3em 0.3em 0 0 var(--primary-color),
+    inset 0 0 0 0 var(--primary-color);
 }
 
-.container {
-  max-width: 960px;
+.btn-cta:hover,
+.btn-cta:focus {
+  box-shadow: 0 0 0 0 #000, inset 6em 3.5em 0 0 #000;
+  border: solid 5px var(--hover);
+  color: #fff;
 }
 
-.pricing-header {
-  max-width: 700px;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
+.speaker-bg {
+  background: url("../images/x-pattern-bg.png");
+  /* height: 24rem; */
   width: 100%;
-  height: 60px; /* Set the fixed height of the footer here */
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-size: auto 100%, auto;
+  background-position: center bottom, center -50%;
+}
+
+.btn-speaker {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: solid 5px var(--primary-color);
+  font-weight: 800;
+}
+
+.btn-speaker:hover,
+.btn-speaker:focus {
+  border-bottom: solid 5px #000;
 }

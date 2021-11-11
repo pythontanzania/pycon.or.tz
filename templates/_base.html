@@ -10,47 +10,99 @@
   <meta name="description"
     content="Python Tanzania, PyCon Conference Tanzania, Django Tanzania, Python Language Tanzania">
   <meta name="author" content="">
-  <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
+  <link rel="mask-icon" href="{% static 'favicon/safari-pinned-tab.svg' %}" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
 
   {% block css %}
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link id="bootstrap" href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+  <link id="bootstrap-grid" href="{% static 'css/bootstrap-grid.min.css' %}" rel="stylesheet" type="text/css" />
+  <link id="bootstrap-reboot" href="{% static 'css/bootstrap-reboot.min.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/owl.theme.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/owl.transitions.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/jquery.countdown.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+  <!-- color scheme -->
+  <link id="colors" href="{% static 'css/colors/scheme-01.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/coloring.css' %}" rel="stylesheet" type="text/css" />
 
-  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
   {% endblock %}
 </head>
 
 <body>
-  <main role="main">
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <h5 class="my-0 mr-md-auto font-weight-normal">
-        <a href="{% url 'home' %}">Pycon</a>
-      </h5>
-      <a class="p-2 text-dark" href="{% url 'about' %}">About</a>
-      <nav class="my-2 my-md-0 mr-md-3">
-        {% if user.is_authenticated %}
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              {{ user.email }}
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
-              <a class="dropdown-item" href="{% url 'account_change_password' %}">Change password</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="{% url 'account_logout' %}">Log out</a>
-            </div>
-          </li>
-        </ul>
-        {% else %}
-        <form class="form-inline ml-auto">
-          <a href="{% url 'account_login' %}" class="btn btn-outline-secondary">Log in</a>
-          <a href="{% url 'account_signup' %}" class="btn btn-primary ml-2">Sign up</a>
-        </form>
-        {% endif %}
-      </nav>
+  <main role="main" id="wrapper">
+    <div id="preloader">
+      <div class="preloader1"></div>
     </div>
+    <header class="transparent header-light scroll-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="de-flex sm-pt10">
+              <div class="de-flex-col">
+                <div class="de-flex-col">
+                  <!-- logo begin -->
+                  <div id="logo">
+                    <a href="{% url 'home' %}">
+                      <!-- <img alt="" class="logo" src="{% static 'images/logo-light.png' %}" /> -->
+                      <img alt="PyCon Tanzania Logo" class="" style="height: 50px;"
+                        src="{% static 'images/logo.png' %}" />
+                    </a>
+                  </div>
+                  <!-- logo close -->
+                </div>
+                <div class="de-flex-col">
+                </div>
+              </div>
+              <div class="de-flex-col header-col-mid">
+                <!-- mainmenu begin -->
+                <ul id="mainmenu">
+                  <li>
+                    <a href="{% url 'about' %}">About<span></span></a>
+                  </li>
+                  <li>
+                    <a href="{% url 'speak' %}">Speak<span></span></a>
+                  </li>
+                  <li>
+                    <a href="{% url 'schedule' %}">Schedule<span></span></a>
+                  </li>
+                  <li>
+                    <a href="{% url 'coc' %}">Code of Conduct<span></span></a>
+                  </li>
+                  <li>
+                    <a href="#">Previous Pycon<span></span></a>
+                    <ul>
+                      <li><a href="icons-elegant.html">2020</a></li>
+                      <li><a href="icons-etline.html">2019</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="de-flex-col">
+                <div class="menu_side_area">
+                  <a href="{% url 'ticket' %}" class="btn btn-cta">
+                    <!-- <i class="fa fa-ticket"></i> -->
+                    <span>Buy Tickets</span>
+                  </a>
+                  <span id="menu-btn"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
   </main>
 
   <div class="container">
@@ -59,19 +111,106 @@
     {% endblock content %}
   </div>
 
-  <footer class="footer">
+  <footer class="footer-light">
     <div class="container">
-      <span class="text-muted">Footer...</span>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-1">
+          <div class="widget">
+            <h5>Disclaimer</h5>
+            <!-- <img alt="PyCon Tanzania Logo" class="" style="height: 50px;" src="{% static 'images/logo.png' %}" /> -->
+            <p>
+              PyCon Tanzania follows other <a href="https://pycon.org" target="_blank" class="text-primary">Python
+                Conferences</a> | Organized by the
+              <a href="https://mail.python.org/mailman3/lists/tanzania.python.org/" target="_blank"
+                class="text-primary">
+                Python User Group</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-1">
+          <div class="widget">
+            <h5>Our Community</h5>
+            <ul>
+              <li><a href="{% url 'about' %}">About Us</a></li>
+              <li><a href="https://github.com/pycontanzania" target="_blank">Open Source Projects</a></li>
+              <li><a href="https://discord.gg/QzwnHA3KB4" target="_blank">Discord Server</a></li>
+              <li><a href="{% url 'covid' %}">Covid Guideline</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-1">
+          <div class="widget">
+            <h5>Previous Events</h5>
+            <ul>
+              <li><a href="#">2019</a></li>
+              <li><a href="#">2020</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-1">
+          <div class="widget">
+            <h5>Newsletter</h5>
+            <p>Signup for our newsletter to get the latest news in your inbox.</p>
+            <form action="blank.php" class="row form-dark" id="form_subscribe" method="post" name="form_subscribe">
+              <div class="col text-center">
+                <input class="form-control" id="txt_subscribe" name="txt_subscribe" placeholder="enter your email"
+                  type="text" /> <a href="#" id="btn-subscribe"><i class="arrow_right bg-color-secondary"></i></a>
+                <div class="clearfix"></div>
+              </div>
+            </form>
+            <div class="spacer-10"></div>
+            <small>Your email is safe with us. We don't spam.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subfooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="de-flex">
+              <div class="de-flex-col">
+                <a href="{% url 'home' %}">
+                  <img src="{% static 'images/flogo.png' %}" alt="Footer logo" style="height: 40px; width: auto;" />
+                  <span class="copy">&copy; Made with ♥ by Pycon Tanzania Community</span>
+                </a>
+              </div>
+              <div class="de-flex-col">
+                <div class="social-icons">
+                  <a href="#"><i class="fa fa-telegram fa-lg"></i></a>
+                  <a href="https://twitter.com/PyconTanzania"><i class="fa fa-twitter fa-lg"></i></a>
+                  <a href="https://twitter.com/pycon.tanzania"><i class="fa fa-instagram fa-lg"></i></a>
+                  <a href="https://www.linkedin.com/company/pycontanzania"><i class="fa fa-linkedin fa-lg"></i></a>
+                  <a href="https://github.com/pycontanzania"><i class="fa fa-github fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 
   {% block javascript %}
   <!-- Bootstrap JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-  </script>
+
+  <script src=" {% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <script src="{% static 'js/jquery.isotope.min.js' %}"></script>
+  <script src="{% static 'js/easing.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.js' %}"></script>
+  <script src="{% static 'js/OwlCarousel2Thumbs.min.js' %}"></script>
+  <script src="{% static 'js/validation.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/enquire.min.js' %}"></script>
+  <script src="{% static 'js/jquery.plugin.js' %}"></script>
+  <script src="{% static 'js/jquery.countTo.js' %}"></script>
+  <script src="{% static 'js/jquery.countdown.js' %}"></script>
+  <script src="{% static 'js/jquery.lazy.min.js' %}"></script>
+  <script src="{% static 'js/jquery.lazy.plugins.min.js' %}"></script>
+  <script src="{% static 'js/designesia.js' %}"></script>
 
   <!-- 3rd party JavaScript -->
 

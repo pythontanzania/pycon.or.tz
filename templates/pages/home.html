@@ -1,11 +1,296 @@
 {% extends '_base.html' %}
 {% load static %}
 
-{% block title %}Home page{% endblock title %}
+{% block title %}Pycon Tanzania{% endblock title %}
 
 {% block content %}
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <img src="{% static 'images/logo.png' %}" class="img-fluid" alt="DjangoX logo"/>
-  <p class="lead">A Django starter project with batteries.</p>
+<div class="no-bottom no-top" id="content">
+  <div id="top"></div>
+  <section id="section-hero" aria-label="section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="spacer-single"></div>
+          <h6 class="wow fadeInUp" data-wow-delay=".5s">
+            <span class="text-uppercase id-color-2">
+              Karibu Pycon Tanzania
+            </span>
+          </h6>
+          <div class="spacer-10"></div>
+          <h1 class="wow fadeInUp" data-wow-delay=".75s">The <span class="id-color">3rd</span> annual
+            python language conference.</h1>
+          <p class="wow fadeInUp lead" data-wow-delay="1s">
+            For professionals, entrepreneurs, scientists and students in Tanzania, organized by the tech-community to
+            foster collaboration and advancement of technology.</p>
+          <div class="spacer-10"></div>
+          <a href="explore.html" class="btn btn-cta wow fadeInUp lead" data-wow-delay="1.25s">Become A Sponsor</a>
+          <div class="spacer-single"></div>
+          <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-4 wow fadeInRight mb30" data-wow-delay="1.1s">
+              <div class="de_count text-left">
+                <h3><span>1<sup>st</sup> - 5<sup>th</sup> </span></h3>
+                <h4 class="id-color">December 2021</h4>
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-md-6 col-sm-4 wow fadeInRight mb30" data-wow-delay="1.4s">
+              <div class="de_count text-left">
+                <h3>
+                  <span>Venue</span>
+                  <a href="https://goo.gl/maps/VvZ8XHAJ8V6T7tBd6" target="_blank">&rarr;</a>
+                </h3>
+                <h4 class="id-color">Institute of Accountancy Arusha</h4>
+              </div>
+            </div>
+          </div>
+          <div class="mb-sm-30"></div>
+        </div>
+        <div class="col-md-6 xs-hide">
+          <div id="home-carousel" class="owl-carousel p-5">
+            <div class="item">
+              <img src="{% static 'images/2020/10.jpg' %}" alt="">
+            </div>
+            <div class="item">
+              <img src="{% static 'images/2020/7.jpg' %}" alt="">
+            </div>
+            <div class="item">
+              <img src="{% static 'images/2020/8.jpg' %}" alt="">
+            </div>
+            <div class="item">
+              <img src="{% static 'images/2020/9.jpg' %}" alt="">
+            </div>
+            <div class="item">
+              <img src="{% static 'images/2020/1.jpg' %}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-intro">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-12">
+          <div class="text-center">
+            <h2>Speakers</h2>
+            <div class="small-border bg-color-2"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-sm-30">
+          <div class="de-card">
+            <div class="de-image">
+              <img src="{% static 'images/2021/speakers/davis.png' %}" class="img-fluid" alt="">
+            </div>
+            <div class="text border-0 px-4">
+              <h3 class="text-uppercase mb-1">Davis David</h3>
+              <p class="fw-bold mb-">
+                Data Scientist
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="https://zindi.africa/" target="_blank">
+                  <img src="https://assets.zindi.africa/media/eb407ec80dd038cf06376a5ad67d8c36.svg" class="img-fluid"
+                    style="height: 20px; width: auto; -webkit-filter: grayscale(1);
+                filter: grayscale(1);" alt="Zindi Africa" />
+                  </diav>
+                  <a href="https://www.linkedin.com/in/davis-david-783461124/" target="_blank"
+                    class="btn btn-speaker">Speaker Profile &rarr; <span></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-sm-30">
+          <div class="de-card">
+            <div class="de-image">
+              <img src="{% static 'images/2021/speakers/logan.png' %}" class="img-fluid" alt="">
+            </div>
+            <div class="text border-0 px-4">
+              <h3 class="text-uppercase mb-1">Logan Velvindron</h3>
+              <p class="fw-bold">
+                Infrastructure Engineer
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="https://github.com/cyberstormdotmu" target="_blank">
+                  <img src="https://avatars.githubusercontent.com/u/43320758?s=200&v=4" class="img-fluid" style="height: 50px; width: auto; -webkit-filter: grayscale(1);
+                filter: grayscale(1);" alt="Cyberstorm Mauritius" />
+                </a>
+                <a href="https://github.com/loganaden" class="btn btn-speaker">Speaker Profile &rarr; <span></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-sm-30">
+          <div class="de-card">
+            <div class="de-image">
+              <img src="{% static 'images/2021/speakers/zephania.png' %}" class="img-fluid" alt="Zephania" />
+            </div>
+            <div class="text border-0 px-4">
+              <h3 class="text-uppercase mb-1">Zephania Reuben</h3>
+              <p class="fw-bold mb-">
+                Software Engineer
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="https://beem.africa/" target="_blank">
+                  <img src="https://beem.africa/wp-content/uploads/2020/12/Beem-menu-logo-02.svg" class="img-fluid"
+                    style="height: 30px; width: auto; -webkit-filter: grayscale(1);
+                filter: grayscale(1);" alt="Beem Africa" />
+                </a>
+                <a href="https://www.linkedin.com/in/zephania-reuben-a42233185/" class="btn btn-speaker">Speaker Profile
+                  &rarr; <span></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-sm-30">
+          <div class="de-card">
+            <div class="de-image">
+              <img src="{% static 'images/2021/speakers/noah.png' %}" class="img-fluid" alt="Zephania" />
+            </div>
+            <div class="text border-0 px-4">
+              <h3 class="text-uppercase mb-1">Noah Maina</h3>
+              <p class="fw-bold mb-">
+                Convener
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="{% url 'home' %}" target="_blank">
+                  <img src="{% static 'images/logo.png' %}" class="img-fluid" style="height: 30px; width: auto; -webkit-filter: grayscale(1);
+                filter: grayscale(1);" alt="Pycon Convener" />
+                </a>
+                <a href="https://www.linkedin.com/in/mainamukhangunoah/" class="btn btn-speaker">Speaker Profile
+                  &rarr; <span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-sm-30">
+          <div class="de-card">
+            <div class="de-image">
+              <img src="{% static 'images/2021/speakers/kalebu.png' %}" class="img-fluid" alt="Zephania" />
+            </div>
+            <div class="text border-0 px-4">
+              <h3 class="text-uppercase mb-1">Kalebu Gwalugano</h3>
+              <p class="fw-bold mb-">
+                Mechatronics Eng & Pythonista
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="https://www.neurotech.africa/" target="_blank">
+                  <img
+                    src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/714/5964027714_bd56b33c-3cf3-4e0b-acdb-232c6ef61722.png?cb=1630912001"
+                    class="img-fluid" style="height: 30px; width: auto; -webkit-filter: grayscale(1);
+                filter: grayscale(1);" alt="Beem Africa" />
+                </a>
+                <a href="https://www.linkedin.com/in/kalebu-gwalugano/" class="btn btn-speaker">Speaker Profile
+                  &rarr; <span></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-why-choose-us" class="no-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <div class="text-center">
+            <h2>The Programme</h2>
+            <div class="small-border bg-color-2"></div>
+          </div>
+        </div>
+        <div class="col-md-6 py-5 pe-5">
+          <!-- <img src="{% static 'images/misc/images-set-2.png'  %}" class="lazy img-fluid" alt=""> -->
+
+          <iframe width="100%" height="420" src="https://www.youtube.com/embed/4Elmrr3P_vo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-lg-6 mb20">
+              <h4>Workshop Day</h4>
+              <p>
+                Curated hands-on workshops exploring the fundamentals of the Python language where participants learn
+                from mentors.
+              </p>
+            </div>
+            <div class="col-lg-6 mb20">
+              <h4>Conference Day</h4>
+              <p>
+                Various 25min long, technical presentations selected through a CfP process that're related to projects
+                using Python Language
+              </p>
+            </div>
+            <div class="col-lg-6 mb20">
+              <h4>Lightning Talks</h4>
+              <p>
+                Sessions where the folks engage in informal discussions to encourage collaboration on various Python
+                related projects.
+              </p>
+            </div>
+            <div class="col-lg-6 mb20">
+              <h4>Python Meetups</h4>
+              <p>
+                Occasional events to bring together Python Users so as to increase collaboration among the Python
+                language community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-studio-type" class="no-top d-none">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <div class="text-center">
+            <h2>Resources</h2>
+            <div class="small-border bg-color-2"></div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="de-image-text">
+            <a href="#" class="d-text">
+              <h3><span class="id-color">01</span> Podcast</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem.</p>
+            </a>
+            <img src="{% static 'images/misc/space-type-podcast.jpg'  %}" class="img-fluid" alt="">
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="de-image-text">
+            <a href="#" class="d-text">
+              <h3><span class="id-color">02</span> Live Streaming</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem.</p>
+            </a>
+            <img src="{% static 'images/misc/space-type-streaming.jpg'  %}" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="de-image-text">
+            <a href="#" class="d-text">
+              <h3><span class="id-color">03</span> Photo &amp; Video Shoot</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem.</p>
+            </a>
+            <img src="{% static 'images/misc/space-type-photo.jpg'  %}" class="img-fluid" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 </div>
 {% endblock content %}
