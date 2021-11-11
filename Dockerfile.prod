@@ -3,7 +3,7 @@
 ###########
 
 # pull official base image
-FROM python:3.8 as builder
+FROM python:3.9.6-alpine as builder
 
 # set work directory
 WORKDIR /usr/src/app
@@ -32,7 +32,7 @@ RUN pip wheel --no-cache-dir --no-deps --wheel-dir /usr/src/app/wheels -r requir
 #########
 
 # pull official base image
-FROM python:3.8
+FROM python:3.9.6-alpine
 
 # create directory for the app user
 RUN mkdir -p /home/app
@@ -49,7 +49,7 @@ RUN mkdir $APP_HOME/mediafiles
 WORKDIR $APP_HOME
 
 # install dependencies
-RUN apk update && apk add libpq gcc
+RUN apk update && apk add libpq gcc libc-dev make git libffi-dev openssl-dev python3-dev libxml2-dev libxslt-dev
 COPY --from=builder /usr/src/app/wheels /wheels
 COPY --from=builder /usr/src/app/requirements.txt .
 RUN pip install --no-cache /wheels/*
