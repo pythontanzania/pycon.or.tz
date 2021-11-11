@@ -48,8 +48,6 @@ RUN mkdir $APP_HOME/staticfiles
 RUN mkdir $APP_HOME/mediafiles
 WORKDIR $APP_HOME
 
-COPY static $APP_HOME/staticfiles
-
 # install dependencies
 RUN apk update && apk add libpq gcc libc-dev make git libffi-dev openssl-dev python3-dev libxml2-dev libxslt-dev
 COPY --from=builder /usr/src/app/wheels /wheels
@@ -63,6 +61,9 @@ RUN chmod +x  $APP_HOME/entrypoint.prod.sh
 
 # copy project
 COPY . $APP_HOME
+
+# static files
+COPY static $APP_HOME/staticfiles
 
 # chown all the files to the app user
 RUN chown -R app:app $APP_HOME
