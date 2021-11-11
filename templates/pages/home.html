@@ -23,7 +23,8 @@
             For professionals, entrepreneurs, scientists and students in Tanzania, organized by the tech-community to
             foster collaboration and advancement of technology.</p>
           <div class="spacer-10"></div>
-          <a href="explore.html" class="btn btn-cta wow fadeInUp lead" data-wow-delay="1.25s">Become A Sponsor</a>
+          <a href="{% url 'sponsor' %}" class="btn btn-cta wow fadeInUp lead" data-wow-delay="1.25s">Become A
+            Sponsor</a>
           <div class="spacer-single"></div>
           <div class="row">
             <div class="col-lg-5 col-md-6 col-sm-4 wow fadeInRight mb30" data-wow-delay="1.1s">
@@ -265,7 +266,6 @@
           </div>
         </div>
 
-
         <div class="col-md-4">
           <div class="de-image-text">
             <a href="#" class="d-text">
@@ -292,5 +292,17 @@
     </div>
   </section>
 
+  <section class="p-5 bg-color-secondary">
+    <div class="row d-flex align-items-center justify-content-between">
+      <div class="col-lg-8">
+        <h1>Covid-19 Travel Advice</h1>
+        <h4>Please read the following resources to get more information about vaccine & test </h4>
+
+      </div>
+      <div class="col-lg-4 text-end">
+        <a href="{% url 'covid' %}" class="btn btn-covid">Covid-19 Travel Advice</a>
+      </div>
+    </div>
+  </section>
 </div>
 {% endblock content %}

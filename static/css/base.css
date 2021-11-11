@@ -1,3 +1,23 @@
+.btn-covid {
+  padding-right: 2.5rem !important;
+  padding-left: 2.5rem !important;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  border-radius: 0;
+  background-color: transparent;
+  border: solid 5px #fff;
+  font-weight: 800;
+  color: #fff;
+  box-shadow: 0.3em 0.3em 0 0 var(--primary-color),
+    inset 0 0 0 0 var(--primary-color);
+}
+
+.btn-covid:hover,
+.btn-covid:focus {
+  box-shadow: 0 0 0 0 #fff, inset 6em 4.5em 0 0 #fff;
+  border: solid 5px var(--hover);
+  color: #000;
+}
 .btn-cta {
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important;
