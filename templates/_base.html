@@ -85,8 +85,8 @@
                   <li>
                     <a href="#">Previous Pycon<span></span></a>
                     <ul>
-                      <li><a href="icons-elegant.html">2020</a></li>
-                      <li><a href="icons-etline.html">2019</a></li>
+                      <li><a href="http://pycon.or.tz/2020/index.html" target="_blank">2020</a></li>
+                      <li><a href="http://pycon.or.tz/2019/index.html" target="_blank">2019</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -144,8 +144,8 @@
           <div class="widget">
             <h5>Previous Events</h5>
             <ul>
-              <li><a href="#">2019</a></li>
-              <li><a href="#">2020</a></li>
+              <li><a href="http://pycon.or.tz/2019/index.html" target="_blank">2019</a></li>
+              <li><a href="http://pycon.or.tz/2020/index.html" target="_blank">2020</a></li>
             </ul>
           </div>
         </div>
@@ -153,11 +153,12 @@
           <div class="widget">
             <h5>Newsletter</h5>
             <p>Signup for our newsletter to get the latest news in your inbox.</p>
-            <form action="blank.php" class="row form-dark" id="form_subscribe" method="post" name="form_subscribe">
-              <div class="col text-center">
-                <input class="form-control" id="txt_subscribe" name="txt_subscribe" placeholder="enter your email"
-                  type="text" /> <a href="#" id="btn-subscribe"><i class="arrow_right bg-color-secondary"></i></a>
-                <div class="clearfix"></div>
+            <form action="https://www.getrevue.co/profile/PyconTanzania/add_subscriber" method="post" id="revue-form"
+              name="revue-form" target="_blank" class="row form-dark" id="form_subscribe">
+              <div class="col input-group">
+                <input class="form-control newsletter py-3" placeholder="Enter your email" type="email" name="member[email]"
+                  id="member_email" class="revue-form-field" />
+                <input type="submit" class="btn rounded-0 text-white bg-color-secondary" value="&rarr;" name="member[subscribe]" id="member_submit">
               </div>
             </form>
             <div class="spacer-10"></div>

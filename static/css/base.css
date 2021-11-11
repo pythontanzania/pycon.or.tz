@@ -64,3 +64,14 @@
 .btn-speaker:focus {
   border-bottom: solid 5px #000;
 }
+
+.newsletter {
+  border: solid 5px #000;
+  border-radius: 0;
+  color: #fff;
+}
+
+.newsletter:focus,
+.newletter:hover {
+  border: solid 5px var(--secondary-color);
+}
