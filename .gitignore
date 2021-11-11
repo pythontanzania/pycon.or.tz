@@ -14,3 +14,4 @@ media
 # Enviroment
 .env
 .env.prod
+.env.prod.db
