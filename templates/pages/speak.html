@@ -186,19 +186,21 @@
                     <div class="de-box border-0">
                         <h3>Share With Friends</h3>
                         <div class="de-color-icons">
-                            <span><i class="fa fa-twitter fa-lg"></i></span>
+                            <a href="{% url 'home' %}"><i class="fa fa-twitter fa-lg"></i></a>
                             <span><i class="fa fa-facebook fa-lg"></i></span>
-                            <span><i class="fa fa-reddit fa-lg"></i></span>
-                            <span><i class="fa fa-linkedin fa-lg"></i></span>
-                            <span><i class="fa fa-envelope fa-lg"></i></span>
+                            <a href=""><i class="fa fa-whatsapp fa-lg"></i></a>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url={% url 'home' %}">
+                                <i class="fa fa-linkedin fa-lg"></i>
+                            </a>
+                            <a
+                                href="mailto:?subject=Pycon 2021 Arusha&amp;body=Grab a ticket for Pycon Tanzania 2021 at https://pycon.co.tz">
+                                <i class="fa fa-envelope fa-lg"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-</div>
-</section>
+    </section>
 </div>
 {% endblock content %}
