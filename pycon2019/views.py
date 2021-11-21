@@ -27,4 +27,3 @@ class CoCPageView(TemplateView):
 
 class SchedulePageView(TemplateView):
     template_name = "pycon2019/schedule.html"
-
