@@ -12,7 +12,7 @@ services:
       dockerfile: Dockerfile.prod
     command: gunicorn config.wsgi:application --bind 0.0.0.0:8000
     volumes:
-      - static_volume:/home/app/web/staticfiles
+      - static_volume:/home/app/web/static
       - media_volume:/home/app/web/mediafiles
     expose:
       - 8000
@@ -31,7 +31,7 @@ services:
   nginx:
     build: ./nginx
     volumes:
-      - static_volume:/home/app/web/staticfiles
+      - static_volume:/home/app/web/static
       - media_volume:/home/app/web/mediafiles
     environment:
       - VIRTUAL_HOST=pycon.co.tz, pycon.or.tz, www.pycon.co.tz, www.pycon.or.tz
