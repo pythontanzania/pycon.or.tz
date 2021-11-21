@@ -34,8 +34,8 @@ services:
       - static_volume:/home/app/web/staticfiles
       - media_volume:/home/app/web/mediafiles
     environment:
-      - VIRTUAL_HOST=pycon.co.tz, pycon.or.tz
-      - LETSENCRYPT_HOST=pycon.co.tz, pycon.or.tz
+      - VIRTUAL_HOST=pycon.co.tz, pycon.or.tz, www.pycon.co.tz, www.pycon.or.tz
+      - LETSENCRYPT_HOST=pycon.co.tz, pycon.or.tz, www.pycon.co.tz, www.pycon.or.tz
       - LETSENCRYPT_EMAIL=comms@pycon.or.tz
     ports:
       - 1337:80
