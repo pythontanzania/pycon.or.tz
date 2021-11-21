@@ -27,7 +27,3 @@ class CoCPageView(TemplateView):
 
 class SchedulePageView(TemplateView):
     template_name = "pycon2020/schedule.html"
-
-
-class TicketPageView(TemplateView):
-    template_name = "pycon2020/ticket.html"

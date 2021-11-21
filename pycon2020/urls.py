@@ -8,7 +8,6 @@ from .views import (
     CovidPageView,
     CoCPageView,
     SchedulePageView,
-    TicketPageView,
 )
 
 urlpatterns = [
@@ -19,5 +18,4 @@ urlpatterns = [
     path("covid-19/", CovidPageView.as_view(), name="covid2020"),
     path("coc/", CoCPageView.as_view(), name="coc2020"),
     path("schedule/", SchedulePageView.as_view(), name="schedule2020"),
-    path("ticket/", TicketPageView.as_view(), name="ticket2020"),
 ]
