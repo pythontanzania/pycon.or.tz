@@ -4,27 +4,11 @@
 
 {% block content %}
 <div class="no-bottom no-top" id="content">
-    <section id="subheader" class="s2">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <h2>Pycon 2021 Event</h2>
-                </div>
-                <div class="col-md-4">
-                    <div class="pull-right">Time left until event: </div>
-                    <div class="clearfix"></div>
-                    <div class="de_countdown id-color-2" data-year="2021" data-month="12" data-day="1" data-hour="8">
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </section>
-    <section aria-label="section">
+    <section aria-label="section" class="mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <h3>Speak at the 2021 Python Conference in Arusha, Tanzania</h3>
+                    <h3>Speak at the 2019 Python Conference in Arusha, Tanzania</h3>
                     <p>
                         Call for Presentation and Tutorials
                     </p>
@@ -60,7 +44,8 @@
                         often a good image can help get a point across quickly.
                     </p>
                     <p>
-                        SUBMIT YOUR PRESENTATION / TUTORIAL TO: speak(at)pycon.or.tz
+                        SUBMIT YOUR PRESENTATION / TUTORIAL TO:
+                        <a href="mailto:speak@pycon.or.tz">speak(at)pycon.or.tz</a>
                     </p>
 
                     <div class="spacer-single"></div>
@@ -128,35 +113,35 @@
                         <div class="sm-icon mb30">
                             <i class="bg-color fa fa-calendar-check-o"></i>
                             <div class="si-inner">
-                                <h5>14th Sept, 2021</h5>
+                                <h5>06th Nov, 2019</h5>
                                 Call for Presentations
                             </div>
                         </div>
                         <div class="sm-icon mb30">
                             <i class="bg-color fa fa-calendar-check-o"></i>
                             <div class="si-inner">
-                                <h5> 15th November, 2021</h5>
+                                <h5> 12th Nov, 2019</h5>
                                 Final Accepting of Draft Presentations
                             </div>
                         </div>
                         <div class="sm-icon mb30">
                             <i class="bg-color fa fa-calendar-check-o"></i>
                             <div class="si-inner">
-                                <h5>22nd November, 2021</h5>
+                                <h5>25th Nov, 2019</h5>
                                 Publishing of Accepted Speakers
                             </div>
                         </div>
                         <div class="sm-icon mb30">
                             <i class="bg-color fa fa-calendar-check-o"></i>
                             <div class="si-inner">
-                                <h5>26th November, 2021</h5>
+                                <h5>30th Nov, 2019</h5>
                                 Publishing of Final Program
                             </div>
                         </div>
                         <div class="sm-icon mb30">
                             <i class="bg-color fa fa-calendar-check-o"></i>
                             <div class="si-inner">
-                                <h5>1st - 5th December, 2021</h5>
+                                <h5>10th - 11st December, 2019</h5>
                                 Tutorials and Conference Begin
                             </div>
                         </div>
@@ -164,34 +149,18 @@
                             <i class="bg-color fa fa-map-marker"></i>
                             <div class="si-inner">
                                 <h5>Location</h5>
-                                <a href="https://goo.gl/maps/VvZ8XHAJ8V6T7tBd6" target="_blank">
-                                    Institute of Accountancy Arusha &rarr;
+                                <a href="https://goo.gl/maps/1Wci3bbrpcr1NQtNA" target="_blank">
+                                    Seedspace Auditorium,
+                                    13th Floor, Tanzanite Park &rarr;
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="sidebar_inner-sdsdsd">
-                        <div id="quick_form" class="form-border mb30 border-0">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h3>Grab your ticket now.</h3>
-                                </div>
-                                <div class="col-md-12">
-                                    <h4>Scan QR</h4>
-                                    <img src="{% static 'images/qr-code.png' %}" width="100%"
-                                        alt="Buy ticket instruction" />
-                                    <div class="spacer-single"></div>
-                                    <h4>Or SMS</h4>
-                                    <p class="bg-light fw-bold py-3 px-2">#oda tiketi 1 to phone 076455646</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="de-box border-0">
                         <h3>Share With Friends</h3>
                         <div class="de-color-icons">
-                            <a href="{% url 'home' %}"><i class="fa fa-twitter fa-lg"></i></a>
+                            <a href="{% url 'home2019' %}"><i class="fa fa-twitter fa-lg"></i></a>
                             <span><i class="fa fa-facebook fa-lg"></i></span>
                             <a href=""><i class="fa fa-whatsapp fa-lg"></i></a>
                             <a href="https://www.linkedin.com/shareArticle?mini=true&url={% url 'home' %}">
