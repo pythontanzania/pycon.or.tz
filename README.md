@@ -17,22 +17,22 @@
 
 ## 📖 Installation
 
-DjangoX can be installed via Pip, Pipenv, or Docker depending upon your setup. To start, clone the repo to your local computer and change into the proper directory.
+PyCon website can be installed via Pip, Pipenv, or Docker depending upon your setup. To start, clone the repo to your local computer and change into the proper directory.
 
 ```
-$ git clone https://github.com/pycontanzania/website.git
-$ cd djangox
+$ git clone https://github.com/pycontanzania/website.git pycontz
+$ cd pycontz
 ```
 
 ### Pip
 
 ```
-$ python3 -m venv djangox
-$ source djangox/bin/activate
-(djangox) $ pip install -r requirements.txt
-(djangox) $ python manage.py migrate
-(djangox) $ python manage.py createsuperuser
-(djangox) $ python manage.py runserver
+$ python3 -m venv pycontz
+$ source pycontz/bin/activate
+(pycontz) $ pip install -r requirements.txt
+(pycontz) $ python manage.py migrate
+(pycontz) $ python manage.py createsuperuser
+(pycontz) $ python manage.py runserver
 # Load the site at http://127.0.0.1:8000
 ```
 
@@ -41,9 +41,9 @@ $ source djangox/bin/activate
 ```
 $ pipenv install
 $ pipenv shell
-(djangox) $ python manage.py migrate
-(djangox) $ python manage.py createsuperuser
-(djangox) $ python manage.py runserver
+(pycontz) $ python manage.py migrate
+(pycontz) $ python manage.py createsuperuser
+(pycontz) $ python manage.py runserver
 # Load the site at http://127.0.0.1:8000
 ```
 
@@ -71,13 +71,13 @@ INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
 
 ```
 # Run Migrations
-(djangox) $ python manage.py migrate
+(pycontz) $ python manage.py migrate
 
 # Create a Superuser
-(djangox) $ python manage.py createsuperuser
+(pycontz) $ python manage.py createsuperuser
 
 # Confirm everything is working:
-(djangox) $ python manage.py runserver
+(pycontz) $ python manage.py runserver
 
 # Load the site at http://127.0.0.1:8000
 ```

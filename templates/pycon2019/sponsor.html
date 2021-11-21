@@ -1,0 +1,134 @@
+{% extends '_2019.html' %}
+
+{% block title %}Sponsorship Prospectus{% endblock %}
+
+{% block content %}
+<section id="section-pricing" class="no-bottom">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="text-start">
+                    <h1>Thanks to our sponsors</h1>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    PyCon Tanzania is generously sponsored by organisations that support its aims. Sponsorship of
+                    PyCon gives organisation regional visibility, recognition and eco-system exposure. It is an
+                    excellent way to support the Python language community, the software developers and the open
+                    source software in Tanzania.
+                </p>
+                <p>
+                    Each sponsorship opportunity includes the additional benefits as described in the prospects
+                    below which are based on the organisation's sponsorship.
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center py-5">
+            <div class="col-md-4">
+                <div class="switch-set mt-4">
+                    <div>USD</div>
+                    <div><input id="sw-1" class="switch" type="checkbox" /></div>
+                    <div>TZS</div>
+                    <div class="spacer-20"></div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h1>Our Sponsorship Packages</h1>
+            </div>
+        </div>
+        <div class="item pricing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="pricing-s1 mb30 border-0">
+                            <div class="top">
+                                <h2>Silver Sponsors</h2>
+                                <p class="plan-tagline">Visionary</p>
+                            </div>
+                            <div class="mid bg-color-secondary text-light">
+                                <p class="price">
+                                    <span class="m opt-1 fs-1">1000</span>
+                                    <span class="y opt-2 fs-1">2,284,000</span>
+                                    <span class="currency fs-1">USD</span>
+                                </p>
+                            </div>
+
+                            <div class="bottom">
+                                <ul>
+                                    <li><i class="fa fa-check"></i>Company logo on the PyCon TZ website.</li>
+                                    <li><i class="fa fa-check"></i>4 free conference registrations.</li>
+                                    <li><i class="fa fa-check"></i>Speaking slot during the event</li>
+                                </ul>
+                            </div>
+
+                            <div class="action">
+                                <a href="mailto:noah@pycon.or.tz?subject=Pycon 2021 Silver Sponsorship&amp;body=I am interested to sponsor PyCon Tanzania 2021"
+                                    class="btn btn-cta">Donate Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="pricing-s1 mb30 border-0">
+                            <div class="top">
+                                <h2>Bronze Sponsors</h2>
+                                <p class="plan-tagline">Supporter</p>
+                            </div>
+
+                            <div class="mid bg-color-secondary text-light">
+                                <p class="price">
+                                    <span class="m opt-1 fs-1">500</span>
+                                    <span class="y opt-2 fs-1">1,141,000</span>
+                                    <span class="currency fs-1">USD</span>
+                                </p>
+                            </div>
+                            <div class="bottom">
+                                <ul>
+                                    <li><i class="fa fa-check"></i>Company logo on the PyCon TZ website.</li>
+                                    <li><i class="fa fa-check"></i>2 free conference registrations.</li>
+                                    <li><i class="fa fa-times text-danger"></i>Speaking slot during the event</li>
+
+                                </ul>
+                            </div>
+
+                            <div class="action">
+                                <a href="mailto:noah@pycon.or.tz?subject=Pycon 2021 Bronze Sponsorship&amp;body=I am interested to sponsor PyCon Tanzania 2021"
+                                    class="btn btn-cta">Donate Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="pricing-s1 mb30 border-0">
+                            <div class="top">
+                                <h2>Individual</h2>
+                                <p class="plan-tagline">Buy ticket</p>
+                            </div>
+                            <div class="mid bg-color-secondary text-light">
+                                <p class="price">
+                                    <span class="m opt-1 fs-1">13</span>
+                                    <span class="y opt-2 fs-1">30,000</span>
+                                    <span class="currency fs-1">USD</span>
+                                </p>
+                            </div>
+                            <div class="bottom">
+                                <ul>
+                                    <li><i class="fa fa-check"></i>Get a chance to win Pycon Swag</li>
+                                    <li><i class="fa fa-check"></i>Attend conference for all days</li>
+                                    <li><i class="fa fa-check"></i>Snacks and food are covered</li>
+                                </ul>
+                            </div>
+
+                            <div class="action">
+                                <a href="{% url 'ticket' %}" class="btn btn-cta">Buy Tickets Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

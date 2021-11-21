@@ -30,7 +30,9 @@ INSTALLED_APPS = [
     "debug_toolbar",
     # Local
     "accounts",
-    "pages",
+    "pycon2019",
+    "pycon2020",
+    "pycon2021",
 ]
 
 # MIDDLEWARE
