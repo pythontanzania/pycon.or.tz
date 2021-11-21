@@ -1,35 +1,26 @@
-> A batteries-included Django starter project. For a production-ready version see the book [Django for Professionals](https://djangoforprofessionals.com).
+> PyCon Tanzania website uses a batteries-included Django starter project. For a production-ready version see the book [Django for Professionals](https://djangoforprofessionals.com).
 
-## 🚀 Features
-
-- Django 3.1 & Python 3.8
-- Install via [Pip](https://pypi.org/project/pip/), [Pipenv](https://pypi.org/project/pipenv/), or [Docker](https://www.docker.com/)
-- User log in/out, sign up, password reset via [django-allauth](https://github.com/pennersr/django-allauth)
-- Static files configured with [Whitenoise](http://whitenoise.evans.io/en/stable/index.html)
-- Styling with [Bootstrap v4](https://github.com/twbs/bootstrap)
-- Debugging with [django-debug-toolbar](https://github.com/jazzband/django-debug-toolbar)
-- DRY forms with [django-crispy-forms](https://github.com/django-crispy-forms/django-crispy-forms)
-
-![Homepage](homepage.png)
-----
+---
 
 ## Table of Contents
-* **[Installation](#installation)**
-  * [Pip](#pip)
-  * [Pipenv](#pipenv)
-  * [Docker](#docker)
-* [Setup](#setup)
-* [Contributing](#contributing)
-* [Support](#support)
-* [License](#license)
 
-----
+- **[Installation](#installation)**
+  - [Pip](#pip)
+  - [Pipenv](#pipenv)
+  - [Docker](#docker)
+- [Setup](#setup)
+- [Contributing](#contributing)
+- [Support](#support)
+- [License](#license)
+
+---
 
 ## 📖 Installation
+
 DjangoX can be installed via Pip, Pipenv, or Docker depending upon your setup. To start, clone the repo to your local computer and change into the proper directory.
 
 ```
-$ git clone https://github.com/wsvincent/djangox.git
+$ git clone https://github.com/pycontanzania/website.git
 $ cd djangox
 ```
 
@@ -91,20 +82,19 @@ INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
 # Load the site at http://127.0.0.1:8000
 ```
 
-----
+---
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome! See [CONTRIBUTING.md](https://github.com/wsvincent/djangox/blob/master/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome! See [CONTRIBUTING.md](https://github.com/pycontanzania/website/blob/master/CONTRIBUTING.md).
 
 ## ⭐️ Support
 
-Give a ⭐️  if this project helped you!
+Give a ⭐️ if this project helped you!
 
 ## License
 
 [The MIT License](LICENSE)
-
 
 <!-- ## Docker Usage
 ```
