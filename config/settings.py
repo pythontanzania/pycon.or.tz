@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "pycon2019",
     "pycon2020",
     "pycon2021",
+    "pycon2022",
 ]
 
 # MIDDLEWARE
