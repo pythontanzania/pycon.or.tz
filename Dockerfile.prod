@@ -63,7 +63,7 @@ RUN chmod +x  $APP_HOME/entrypoint.prod.sh
 COPY . $APP_HOME
 
 # static files
-# COPY static $APP_HOME/staticfiles
+COPY static $APP_HOME/static
 
 # chown all the files to the app user
 RUN chown -R app:app $APP_HOME
