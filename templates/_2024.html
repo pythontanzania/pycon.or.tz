@@ -55,7 +55,7 @@
         <div class="container">
           <!-- Logo container -->
           <div class="logo">
-            <a href="#">
+            <a href="{% url 'home' %}">
               <img class="logo-light" src="{% static 'images/pycon-black.jpg' %}" alt="" />
               <img class="logo-dark" src="{% static 'images/pycon-black.jpg' %}" alt="" />
             </a>
@@ -73,21 +73,24 @@
               <li>
                 <a href="{% url 'home' %}">Home<span></span></a>
               </li>
-              <!--                                    <li>
+              <!--                                            <li>
                         <a href="#speakers" data-scroll="true">Speakers</a>
-                    </li>                                    -->
+                    </li>                                            -->
               <li>
                 <a href="{% url 'sponsor' %}">Sponsor<span></span></a>
               </li>
-              <!--                                    <li>
+              <li>
+                <a href="{% url 'coc' %}">Code of Conduct<span></span></a>
+              </li>
+              <!--                                            <li>
                         <a href="#schedule" data-scroll="true">Schedule</a>
                     </li>
-                    <li><a href="#location" data-scroll="true">Map</a></li>                                    -->
-              <!--                                    <li class="menu-btn-item">
+                    <li><a href="#location" data-scroll="true">Map</a></li>                                            -->
+              <!--                                            <li class="menu-btn-item">
                         <a href="#tickets" data-scroll="true"
                             >Get Tickets</a
                         >
-                    </li>                                    -->
+                    </li>                                            -->
             </ul>
           </div>
         </div>
@@ -123,7 +126,7 @@
                   <a href="https://github.com/pycontanzania" target="_blank">Open Source Projects</a>
                 </li>
                 <li>
-                  <a href="https://discord.gg/QzwnHA3KB4" target="_blank">Discord Server</a>
+                  <a href="{% url 'coc' %}">Code of Conduct<span></span></a>
                 </li>
                 <li>
                   <a href="{% url 'covid' %}">Covid Guideline</a>
