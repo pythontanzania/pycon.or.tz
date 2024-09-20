@@ -73,21 +73,21 @@
               <li>
                 <a href="{% url 'home' %}">Home<span></span></a>
               </li>
-              <!--                     <li>
+              <!--                                    <li>
                         <a href="#speakers" data-scroll="true">Speakers</a>
-                    </li>                     -->
+                    </li>                                    -->
               <li>
                 <a href="{% url 'sponsor' %}">Sponsor<span></span></a>
               </li>
-              <!--                     <li>
+              <!--                                    <li>
                         <a href="#schedule" data-scroll="true">Schedule</a>
                     </li>
-                    <li><a href="#location" data-scroll="true">Map</a></li>                     -->
-              <!--                     <li class="menu-btn-item">
+                    <li><a href="#location" data-scroll="true">Map</a></li>                                    -->
+              <!--                                    <li class="menu-btn-item">
                         <a href="#tickets" data-scroll="true"
                             >Get Tickets</a
                         >
-                    </li>                     -->
+                    </li>                                    -->
             </ul>
           </div>
         </div>
@@ -154,12 +154,12 @@
             <div class="widget">
               <h5>Newsletter</h5>
               <p>Signup for our newsletter to get the latest news in your inbox.</p>
-              <form action="https://www.getrevue.co/profile/PyconTanzania/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank" class="row form-dark" id="form_subscribe">
-                <div class="col input-group">
-                  <input class="form-control newsletter py-3" placeholder="Enter your email" type="email" name="member[email]" id="member_email" class="revue-form-field" />
-                  <input type="submit" class="btn rounded-0 text-white bg-color-secondary" value="&rarr;" name="member[subscribe]" id="member_submit" />
+              <form class="newsletter-form" action="https://www.getrevue.co/profile/PyconTanzania/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
+                <div class="input-group">
+                  <input class="form-control" type="email" name="EMAIL" placeholder="Email" /><span class="input-group-btn"><button class="btn newsletter-btn" type="submit" value="&rarr;" name="member[subscribe]" id="member_submit">Subscribe</button></span>
                 </div>
               </form>
+
               <div class="spacer-10"></div>
               <small>Your email is safe with us. We don't spam.</small>
             </div>

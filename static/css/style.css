@@ -5751,9 +5751,9 @@ i.font60 {
     height: 34px;
     text-align: center;
     font-size: 16px;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
     margin: 0 1px 10px 1px;
 }
 
