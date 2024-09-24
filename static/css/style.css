@@ -5757,6 +5757,10 @@ i.font60 {
     margin: 0 1px 10px 1px;
 }
 
+.mr-2 {
+    padding-right: 2px;
+}
+
 
 .de-color-icons .fa-twitter {
     background: #3ea1ec;

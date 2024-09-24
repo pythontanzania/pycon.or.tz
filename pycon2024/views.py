@@ -9,3 +9,6 @@ class CoCPageView(TemplateView):
     
 class SponsorPageView(TemplateView):
     template_name = "pycon2024/sponsor.html"
+
+class SchedulePageView(TemplateView):
+    template_name = "pycon2024/schedule.html"
