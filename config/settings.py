@@ -17,6 +17,7 @@ ALLOWED_HOSTS = [
     "www.pycon.co.tz",
     "pycon.or.tz",
     "www.pycon.or.tz",
+    "python.tz",
 ]
 
 # APPS
