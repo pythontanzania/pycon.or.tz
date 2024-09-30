@@ -6,17 +6,16 @@
       <ul class="slides">
         <li>
           <img src="{% static 'images/2024/bg_hjome.jpg' %}" alt="" />
-          <div class="slide-wrap gradient">
+          <div class="slide-wrap">
             <div class="slide-content">
               <div class="container">
                 <!-- <h5 class="mb-15">Are you ready?</h5> -->
-                <h1 class="upper">PyCon Tanzania 2024</h1>
-                <h5>The premier conference for Python enthusiasts and professionals, offering an unparalleled opportunity to dive deep into the world of Python and explore its limitless potential</h5>
-                <!--                        <p class="mt-25">
+                {% comment %} <h1 class="upper">PyCon Tanzania 2024</h1> {% endcomment %}
+                <!--                                <p class="mt-25">
                                         <a class="btn btn-light-out" href="#"
                                             >Get Tickets</a
                                         >
-                                    </p>                        -->
+                                    </p>                                -->
               </div>
             </div>
           </div>
@@ -28,6 +27,8 @@
     <div class="container">
       <div class="title center">
         <h2 class="upper">The 5th Annual Python Language Conference</h2>
+        <h4>The premier conference for Python enthusiasts and professionals, offering an unparalleled opportunity to dive deep into the world of Python and explore its limitless potential</h4>
+
         <h4>For professionals, entrepreneurs, scientists and students in Tanzania, organized by the tech-community to foster collaboration and advancement of technology.</h4>
         <h4>Join us for a week of Workshops, technical presentations/talks, lightening talks, hackathons, research showcasing, community collaboration and networking.</h4>
       </div>
@@ -46,14 +47,14 @@
       <div class="col-sm-12">
         <div class="title center">
           <h2 class="upper">University of Dar Es Salaam</h2>
-          <h4>1st - 6th of December</h4>
+          <h4>4th - 5th of December</h4>
         </div>
         <div class="row pb-25 pt-25"></div>
       </div>
     </div>
   </section>
 
-  <!--                        <section class="p-5 bg-color-secondary">
+  <!--                                <section class="p-5 bg-color-secondary">
     <div class="row d-flex align-items-center justify-content-between">
       <div class="col-lg-8">
         <h1>Zanzibar Travel Guideline</h1>
@@ -64,5 +65,5 @@
         <a href="{% url 'travel' %}" class="btn btn-covid">Zanzibar Travel Advice &rarr;</a>
       </div>
     </div>
-  </section>                        -->
+  </section>                                -->
 {% endblock %}
