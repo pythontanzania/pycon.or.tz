@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "crispy_forms",
-    "debug_toolbar",
+    # "debug_toolbar",
     # Local
     "accounts",
     "pycon2019",
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
+    # "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
@@ -150,6 +150,10 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 # https://docs.djangoproject.com/en/dev/ref/settings/#email-backend
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
+# DEBUG_TOOLBAR_CONFIG = {
+#     'SHOW_TOOLBAR_CALLBACK': lambda r: False,  # disables it
+#     # '...
+# }
 # DJANGO-DEBUG-TOOLBAR CONFIGS
 # ------------------------------------------------------------------------------
 # https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
