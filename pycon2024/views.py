@@ -12,3 +12,6 @@ class SponsorPageView(TemplateView):
 
 class SchedulePageView(TemplateView):
     template_name = "pycon2024/schedule.html"
+
+class SpeakPageView(TemplateView):
+    template_name = "pycon2024/speak.html"

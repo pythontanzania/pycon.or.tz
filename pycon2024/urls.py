@@ -5,6 +5,7 @@ from .views import (
     CoCPageView,
     SponsorPageView,
     SchedulePageView,
+    SpeakPageView,
 )
 
 urlpatterns = [
@@ -12,4 +13,5 @@ urlpatterns = [
     path("coc/", CoCPageView.as_view(), name="coc"),
     path("sponsor/", SponsorPageView.as_view(), name="sponsor"),
     path("schedule/", SchedulePageView.as_view(), name="schedule"),
+    path("speak/", SpeakPageView.as_view(), name="speak"),
 ]
