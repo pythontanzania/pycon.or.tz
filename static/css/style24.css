@@ -7869,7 +7869,7 @@ form.register {
   }
 
   #navigation {
-    position: absolute;
+    /* position: absolute; */
     top: 62px;
     left: 0;
     width: 100%;
@@ -7879,7 +7879,7 @@ form.register {
     overflow: auto;
     border-top: 1px solid #3a3a40;
     border-bottom: 1px solid #3a3a40;
-    background-color: #222225;
+    background-color: #FFF;
   }
 
   #navigation.visible {
@@ -8031,6 +8031,10 @@ form.register {
     border-bottom: 1px solid #29292d;
   }
 
+  .nav {
+    flex-direction: column;
+  }
+
   #aside-nav .navigation-menu>li.menu-item-has-children.opened>a {
     border-bottom: 1px solid #29292d;
     color: #1b96ed;
@@ -8077,7 +8081,12 @@ form.register {
 
   #topnav .navigation-menu {
     float: none;
-    max-height: 400px;
+    /* max-height: 400px; */
+
+  }
+
+  #right-aligned-menu {
+    margin-top: 10px;
   }
 
   #topnav .navigation-menu>li {
