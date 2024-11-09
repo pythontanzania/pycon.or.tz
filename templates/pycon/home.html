@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   {% include 'pycon/partials/_header.html' %}
@@ -25,13 +26,13 @@
 
       <section id="services" class="services bg-py-green">
         <div class="container" data-aos="fade-up">
-          <div class="section-title text-black">
-            <h2>What to expect at the 4th Annual Python Conference 2024</h2>
-            <p>Our Programme</p>
+          <div class="section-title text-center">
+            <p class="text-white">Our Programme</p>
+            <h2 class="text-white pt-2">What to expect at the 4th Annual Python Conference 2024</h2>
           </div>
 
           <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch rounded" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box">
                 <div class="icon">
                   <i class="bx bxl-dribbble"></i>
@@ -60,6 +61,304 @@
                 <p>PyCon is a place for developers from across the country (and beyond) to get together and celebrate Python. But what good is a PyCon without getting your hands dirty writing some code?
 
                   .</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="speakers">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-6">
+              <div class="section-title">
+                {% comment %} <h2>Keynote Speakers</h2> {% endcomment %}
+                <p>Keynote Speakers</p>
+              </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <div>
+                <button class="btn btn-primary">See all Speakers</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="{% static 'images/team/julius.png' %}" class="img-fluid rounded-circle" alt="" />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>James Madeli</h4>
+                  <span>Co-Founder</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <img src="{% static 'images/team/julius.png' %}" class="img-fluid rounded-circle" alt="" />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Co-Founder</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="300">
+                <div class="member-img">
+                  <img src="{% static 'images/team/julius.png' %}" class="img-fluid rounded-circle" alt="" />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>James Madeli</h4>
+                  <span>Co-Founder</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <div class="member-img">
+                  <img src="{% static 'images/team/julius.png' %}" class="img-fluid rounded-circle" alt="" />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Rosemary Maro</h4>
+                  <span>Co-Founder</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sponsors">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-6">
+              <div class="section-title">
+                {% comment %} <h2>Keynote Speakers</h2> {% endcomment %}
+                <p>Keynote Speakers</p>
+              </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <div>
+                <button class="btn btn-primary">Become a Sponsor</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="section-title gold">
+                <h2 class="gold">Gold Sponsors</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+              <div data-aos="fade-up" data-aos-delay="100">
+                <img src="{% static 'images/sponsors/udsmlogo.png' %}" class="img-fluid rounded-circle" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+              <div data-aos="fade-up" data-aos-delay="200">
+                <img src="{% static 'images/sponsors/binarylabs.png' %}" class="img-fluid rounded-circle" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+              <div data-aos="fade-up" data-aos-delay="300">
+                <img src="{% static 'images/sponsors/irabu.png' %}" class="img-fluid rounded-circle" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="section-title silver">
+                <h2 class="">Silver Sponsors</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+              <div data-aos="fade-up" data-aos-delay="100">
+                <img src="{% static 'images/sponsors/udsmlogo.png' %}" class="img-fluid rounded-circle" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+              <div data-aos="fade-up" data-aos-delay="200">
+                <img src="{% static 'images/sponsors/binarylabs.png' %}" class="img-fluid rounded-circle" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+              <div data-aos="fade-up" data-aos-delay="300">
+                <img src="{% static 'images/sponsors/irabu.png' %}" class="img-fluid rounded-circle" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="section-title bronze">
+                <h2 class="">Bronze Sponsors</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+              <div data-aos="fade-up" data-aos-delay="100">
+                <img src="{% static 'images/sponsors/udsmlogo.png' %}" class="img-fluid rounded-circle" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+              <div data-aos="fade-up" data-aos-delay="200">
+                <img src="{% static 'images/sponsors/binarylabs.png' %}" class="img-fluid rounded-circle" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+              <div data-aos="fade-up" data-aos-delay="300">
+                <img src="{% static 'images/sponsors/irabu.png' %}" class="img-fluid rounded-circle" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="parallax-bg" id="venue">
+        <div class="row-parallax-bg">
+          <div class="parallax-wrapper">
+            <div class="parallax-bg-element"></div>
+          </div>
+          <div class="parallax-overlay gradient"></div>
+        </div>
+        <div class="container">
+          <div class="col-sm-12">
+            <div class="title text-center">
+              <h2 class="upper">University of Dar Es Salaam</h2>
+              <h4>4th - 5th of December</h4>
+            </div>
+            <div class="pb-25 pt-25 title text-center">
+              <button class="btn btn-primary">Get Tickets</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="speakers">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-6">
+              <div class="section-title">
+                {% comment %} <h2>Keynote Speakers</h2> {% endcomment %}
+                <p>Keynote Speakers</p>
+              </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <div>
+                <button class="btn btn-primary">See all Speakers</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="{% static 'images/team/julius.png' %}" class="img-fluid rounded-circle" alt="" />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>James Madeli</h4>
+                  <span>Co-Founder</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <img src="{% static 'images/team/julius.png' %}" class="img-fluid rounded-circle" alt="" />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Co-Founder</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="300">
+                <div class="member-img">
+                  <img src="{% static 'images/team/julius.png' %}" class="img-fluid rounded-circle" alt="" />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>James Madeli</h4>
+                  <span>Co-Founder</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <div class="member-img">
+                  <img src="{% static 'images/team/julius.png' %}" class="img-fluid rounded-circle" alt="" />
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Rosemary Maro</h4>
+                  <span>Co-Founder</span>
+                </div>
               </div>
             </div>
           </div>

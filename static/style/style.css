@@ -2,7 +2,14 @@
     --py-green: #34904D;
     --py-yellow: #FED111;
     --bg-py-green: #1F4429;
+
 }
+
+.btn-primary {
+    background: var(--py-green);
+    border: var(--py-green);
+}
+
 
 #pageLoader {
     position: fixed;
@@ -125,6 +132,10 @@ body {
 }
 
 .bg-py-green {
+    background: var(--bg-py-green);
+}
+
+.bg-py-green-light {
     background: var(--bg-py-green);
 }
 
@@ -346,6 +357,7 @@ body {
 section {
     padding: 60px 0;
     overflow: hidden;
+    position: relative;
 }
 
 .section-title {
@@ -353,25 +365,44 @@ section {
 }
 
 .section-title h2 {
-    font-size: 14px;
+    font-size: 22px;
     font-weight: 500;
     padding: 0;
     line-height: 1px;
     margin: 0 0 5px 0;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #aaaaaa;
-    font-family: "Poppins", sans-serif;
+    color: #474747;
+    font-family: "Maven Pro", sans-serif;
 }
 
-.section-title h2::after {
+.gold h2::before {
     content: "";
-    width: 120px;
-    height: 1px;
+    width: 12px;
+    height: 25px;
     display: inline-block;
-    background: #fffced;
-    margin: 4px 10px;
+    background: var(--py-yellow);
+    margin: -2px 8px -2px 10px;
 }
+
+.silver h2::before {
+    content: "";
+    width: 12px;
+    height: 25px;
+    display: inline-block;
+    background: #ededed;
+    margin: -2px 8px -2px 10px;
+}
+
+.bronze h2::before {
+    content: "";
+    width: 12px;
+    height: 25px;
+    display: inline-block;
+    background: #804a00;
+    margin: -2px 8px -2px 10px;
+}
+
+
 
 .icon-box h3::after {
     content: "";
@@ -391,8 +422,7 @@ section {
     margin: 0;
     font-size: 36px;
     font-weight: 700;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
+    font-family: "Maven Pro", sans-serif;
     color: #151515;
 }
 
@@ -400,158 +430,6 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero_about {
-    width: 100%;
-    height: 100vh;
-    background: url("../img/b1.jpg") top center;
-    background-size: cover;
-    position: relative;
-}
-
-#hero_what {
-    width: 100%;
-    height: 100vh;
-    background: url("../img/a3.jpg") top center;
-    background-size: cover;
-    position: relative;
-}
-
-#contact-image {
-    width: 100%;
-    height: 100vh;
-    background: url("../img/a1.jpg") top center;
-    background-size: cover;
-    position: relative;
-    position: relative;
-}
-
-#hero_what {
-    margin: 0;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 64px;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-}
-
-#contact-image:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-#hero_what:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-#hero_about:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-#contact-image h1 {
-    margin: 0;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 64px;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-}
-
-#hero_about .container {
-    position: relative;
-    padding-top: 74px;
-    text-align: center;
-}
-
-#hero_what h1 {
-    margin: 0;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 64px;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-}
-
-#hero_about h1 {
-    margin: 0;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 64px;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-}
-
-#hero_what h1 span {
-    color: var(--py-green);
-}
-
-
-
-#contact-image h1 span {
-    color: #fffced;
-}
-
-#hero_what h1 span {
-    color: #fffced;
-}
-
-#hero_about h2 {
-    color: rgba(255, 255, 255, 0.9);
-    margin: 10px 0 0 0;
-    font-size: 24px;
-}
-
-#hero_about .icon-box {
-    padding: 30px 20px;
-    transition: ease-in-out 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    height: 100%;
-    text-align: center;
-}
-
-#hero_about .icon-box i {
-    font-size: 32px;
-    line-height: 1;
-    color: #fffced;
-}
-
-#hero_about .icon-box h3 {
-    font-weight: 700;
-    margin: 10px 0 0 0;
-    padding: 0;
-    line-height: 1;
-    font-size: 20px;
-    line-height: 26px;
-}
-
-#hero_about .icon-box h3 a {
-    color: #fff;
-    transition: ease-in-out 0.3s;
-}
-
-#hero_about .icon-box h3 a:hover {
-    color: #fffced;
-}
-
-#hero_about .icon-box:hover {
-    border-color: #fffced;
-}
 
 #hero {
     width: 100%;
@@ -560,7 +438,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    /* background-position: center -120px; */
+    background-attachment: scroll;
 }
 
 @media screen and (min-width: 1440px) {
@@ -722,4 +600,126 @@ section {
     border-color: #fff;
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
     transform: translateY(-10px);
+}
+
+.member-info {
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+# Venue Date Section
+--------------------------------------------------------------*/
+
+section.parallax-bg {
+    background-color: transparent;
+}
+
+section.dark-bg,
+section.colored-bg,
+section.parallax-bg:not(.parallax-bg-text-dark) {
+    color: #fff;
+}
+
+section.dark-bg blockquote footer,
+section.colored-bg blockquote footer,
+section.parallax-bg:not(.parallax-bg-text-dark) blockquote footer {
+    color: inherit;
+}
+
+section.simple-parallax {
+    padding-top: 220px;
+    padding-bottom: 220px;
+}
+
+
+
+.row-parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.row-parallax-bg .parallax-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    height: calc(100% + 30vh);
+}
+
+.row-parallax-bg .parallax-wrapper .parallax-bg-element {
+    background-image: url("/static/images/2024/udsm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: var(--bg-py-green);
+    opacity: 0.9;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.parallax-overlay.extra-dark {
+    background-color: var(--bg-py-green);
+
+    opacity: 0.9;
+}
+
+.parallax-overlay.light {
+    background-color: var(--bg-py-green);
+
+    opacity: 0.9;
+}
+
+.parallax-overlay.colored {
+    background-color: var(--bg-py-green);
+
+    opacity: 0.9;
+    color: #fff;
+}
+
+.parallax-overlay.gradient:after {
+    content: "";
+    background-color: var(--bg-py-green);
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.75;
+}
+
+.parallax-overlay p {
+    color: #fff;
+}
+
+.parallax-overlay .icon-box-basic i {
+    color: #fff;
+}
+
+.title {
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 10;
 }

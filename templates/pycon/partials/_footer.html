@@ -1,5 +1,35 @@
 {% load static %}
 <footer>
+  <div class="bg-py-green-light">
+    <div class="container">
+      <div class="subfooter border-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="de-flex">
+                <div class="de-flex-col">
+                  <a href="{% url 'home' %}">
+                    <img src="{% static 'images/flogo.png' %}" alt="Footer logo" style="height: 40px; width: auto" />
+                    <span class="copy">&copy; Made with ♥ by PyCon Tanzania Community</span>
+                  </a>
+                </div>
+                <div class="de-flex-col">
+                  <div class="de-color-icons">
+                    <a href="https://t.me/joinchat/JVIj_0D4zRIzNjg0" target="_blank"><i class="fa fa-telegram fa-lg"></i></a>
+                    <a href="https://twitter.com/PyconTanzania"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="https://twitter.com/pycon.tanzania"><i class="fa fa-instagram fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/company/pycontanzania"><i class="fa fa-linkedin fa-lg"></i></a>
+                    <a href="https://github.com/pycontanzania"><i class="fa fa-github fa-lg"></i></a>
+                    <a href="https://www.facebook.com/pycontanzania"><i class="fa fa-facebook fa-lg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="{% static 'scripts/aos.js' %}"></script>
   <script src="{% static 'scripts/bootstrap.min.js' %}"></script>
 </footer>
