@@ -15,18 +15,67 @@
       <section id="hero" class="d-flex align-items-center justify-content-center">
         <div class="container" data-aos="fade-up">
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-            <div class="col-xl-8 col-lg-8">
-              <h1>We are passionate advocates for a sustainable future<span>.</span></h1>
-              <h2>where women and youth play a pivotal role in environmental conservation and community development.</h2>
+            <div class="col-xl-10 col-lg-10 text-black">
+              <h1 class="py-3">PYCON TANZANIA<span>.</span></h1>
+              <h2>Join us for the 5th Python Conference at the <span>University of Dar es Salaam, Mlimani City Campus..</span> where Python developers, enthusiasts and learners from across East Africa will gather to share knowledge, build connections and celebrate out growing tech community.</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services bg-py-green">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title text-black">
+            <h2>What to expect at the 4th Annual Python Conference 2024</h2>
+            <p>Our Programme</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon">
+                  <i class="bx bxl-dribbble"></i>
+                </div>
+                <h4><a href="">Workshops</a></h4>
+                <p>Lightning talks are short presentations, limited to 5 minutes, on any topic that might interest the Python community. It doesn't have to be something you've created, feel free to share something you've learned or a technique you think others will find useful..</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon">
+                  <i class="bx bx-file"></i>
+                </div>
+                <h4><a href="">Lightning Talks</a></h4>
+                <p>Lightning talks are short presentations, limited to 5 minutes, on any topic that might interest the Python community. It doesn't have to be something you've created, feel free to share something you've learned or a technique you think others will find useful.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon">
+                  <i class="bx bx-tachometer"></i>
+                </div>
+                <h4><a href="">Hackathon</a></h4>
+                <p>PyCon is a place for developers from across the country (and beyond) to get together and celebrate Python. But what good is a PyCon without getting your hands dirty writing some code?
+
+                  .</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </div>
-
+    {% include 'pycon/partials/_footer.html' %}
     <script>
       window.addEventListener('load', function () {
         document.getElementById('pageLoader').classList.add('loaded')
+        AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: true,
+          mirror: false
+        })
       })
     </script>
   </body>

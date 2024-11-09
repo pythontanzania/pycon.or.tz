@@ -1,3 +1,9 @@
+:root {
+    --py-green: #34904D;
+    --py-yellow: #FED111;
+    --bg-py-green: #1F4429;
+}
+
 #pageLoader {
     position: fixed;
     top: 0;
@@ -11,11 +17,22 @@
     z-index: 9999;
 }
 
+@font-face {
+    font-family: "Slackey";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Slackey"), url("../fonts/Slackey-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+}
+
 .spinner {
     width: 60px;
     height: 60px;
     border: 8px solid #f3f3f3;
-    border-top: 8px solid #4CAF50;
+    border-top: 8px solid var(--py-green);
     /* Initial color: Green */
     border-radius: 50%;
     animation: spin 4s linear infinite;
@@ -24,7 +41,7 @@
 @keyframes spin {
     0% {
         transform: rotate(0deg);
-        border-top-color: #4CAF50;
+        border-top-color: var(--py-green);
         /* Green */
     }
 
@@ -42,13 +59,13 @@
 
     75% {
         transform: rotate(270deg);
-        border-top-color: #FFC107;
+        border-top-color: var(--py-yellow);
         /* Yellow */
     }
 
     100% {
         transform: rotate(360deg);
-        border-top-color: #4CAF50;
+        border-top-color: var(--py-green);
         /* Back to Green */
     }
 }
@@ -105,6 +122,10 @@
 */
 .navbar {
     padding: 0;
+}
+
+.bg-py-green {
+    background: var(--bg-py-green);
 }
 
 .navbar ul {
@@ -320,6 +341,63 @@
 }
 
 /*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-title {
+    padding-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #fffced;
+    margin: 4px 10px;
+}
+
+.icon-box h3::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #fffced;
+    margin: 5px 0 10px 60px;
+}
+
+.color-red {
+    color: #fffced !important;
+}
+
+.section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #151515;
+}
+
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero_about {
@@ -420,12 +498,10 @@
 }
 
 #hero_what h1 span {
-    color: #23b918;
+    color: var(--py-green);
 }
 
-#hero_about h1 span {
-    color: #23b918;
-}
+
 
 #contact-image h1 span {
     color: #fffced;
@@ -479,15 +555,23 @@
 
 #hero {
     width: 100%;
-    height: 100vh;
-    background: url("../img/hero.jpg") top center;
+    height: 100vh !important;
+    background: url("/static/images/2024/hero.png") top center;
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
+    /* background-position: center -120px; */
+}
+
+@media screen and (min-width: 1440px) {
+    #hero {
+        background-position: center -120px;
+    }
 }
 
 #hero:before {
     content: "";
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -503,19 +587,24 @@
 
 #hero h1 {
     margin: 0;
-    font-size: 56px;
+    font-size: 96px;
     font-weight: 700;
     line-height: 64px;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
+    color: var(--py-green);
+    font-family: "Slackey";
+    text-shadow: 4px 0px 2px var(--py-yellow);
 }
 
 #hero h1 span {
-    color: #23b918;
+    color: var(--py-green);
+}
+
+#hero h2 span {
+    color: var(--py-green);
 }
 
 #hero h2 {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.9);
     margin: 10px 0 0 0;
     font-size: 24px;
 }
@@ -576,4 +665,61 @@
         font-size: 20px;
         line-height: 24px;
     }
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+    text-align: center;
+    border: 1px solid #ebebeb;
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+}
+
+.services .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #fffced;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.services .icon-box .icon i {
+    color: #151515;
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+}
+
+.services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.services .icon-box h4 a {
+    color: #151515;
+    transition: ease-in-out 0.3s;
+}
+
+.services .icon-box h4 a:hover {
+    color: #16000c;
+}
+
+.services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
 }
