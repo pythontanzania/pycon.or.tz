@@ -9,7 +9,7 @@ urlpatterns = [
     path("2020/", include("pycon2020.urls")),
     path("2021/", include("pycon2021.urls")),
     path("2022/", include("pycon2022.urls")),
-    path("", include("pycon2024.urls")),
+    path("", include("pycon.urls")),
 ]
 
 if settings.DEBUG:

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "crispy_forms",
     # "debug_toolbar",
     # Local
+    "pycon",
     "accounts",
     "pycon2019",
     "pycon2020",
