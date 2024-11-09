@@ -554,6 +554,7 @@ section {
     padding: 80px 20px;
     transition: all ease-in-out 0.3s;
     background: #fff;
+    border-radius: 5px;
 }
 
 .services .icon-box .icon {
@@ -722,4 +723,39 @@ section.simple-parallax {
     margin-bottom: 25px;
     position: relative;
     z-index: 10;
+}
+
+
+/*--------------------------------------------------------------
+# Footer Date Section
+--------------------------------------------------------------*/
+.widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    color: #fff;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: unset;
+}
+
+.newsletter-btn {
+    background: var(--py-green);
+    border-radius: 0px 5px 5px 0px;
+    color: #fff;
+}
+
+.pill {
+    background-color: var(--bg-py-green);
+    color: #fff;
 }
