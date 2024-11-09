@@ -29,13 +29,12 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
     "django.contrib.sites",
     # Third-party
-    "allauth",
-    "allauth.account",
-    "crispy_forms",
+    # "allauth",
+    # "allauth.account",
+    # "crispy_forms",
     # "debug_toolbar",
     # Local
     "pycon",
@@ -44,6 +43,7 @@ INSTALLED_APPS = [
     "pycon2020",
     "pycon2021",
     "pycon2022",
+    "compressor",
 ]
 
 # MIDDLEWARE
@@ -51,7 +51,6 @@ INSTALLED_APPS = [
 # https://docs.djangoproject.com/en/dev/ref/settings/#middleware
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     # "debug_toolbar.middleware.DebugToolbarMiddleware",
@@ -138,8 +137,6 @@ STATIC_ROOT = str(BASE_DIR.joinpath("staticfiles"))
 STATIC_URL = "/static/"
 # https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
 STATICFILES_DIRS = [str(BASE_DIR.joinpath("static"))]
-# http://whitenoise.evans.io/en/stable/django.html#add-compression-and-caching-support
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # DJANGO-CRISPY-FORMS CONFIGS
 # ------------------------------------------------------------------------------
@@ -177,7 +174,7 @@ ACCOUNT_LOGOUT_REDIRECT_URL = "home"
 # https://django-allauth.readthedocs.io/en/latest/installation.html?highlight=backends
 AUTHENTICATION_BACKENDS = (
     "django.contrib.auth.backends.ModelBackend",
-    "allauth.account.auth_backends.AuthenticationBackend",
+  #  "allauth.account.auth_backends.AuthenticationBackend",
 )
 # https://django-allauth.readthedocs.io/en/latest/configuration.html
 ACCOUNT_SESSION_REMEMBER = True
