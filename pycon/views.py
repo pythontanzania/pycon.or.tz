@@ -9,3 +9,6 @@ def SpeakPageView(request):
 
 def CocPageview(request):
     return render(request, "pycon/coc.html") 
+
+def SponsorPageView(request):
+    return render(request, "pycon/sponsor.html")

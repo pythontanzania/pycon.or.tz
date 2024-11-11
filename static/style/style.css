@@ -384,6 +384,42 @@ section {
     margin: -2px 8px -2px 10px;
 }
 
+.gold h6::before {
+    content: "";
+    width: 12px;
+    height: 25px;
+    display: inline-block;
+    background: var(--py-yellow);
+    margin: -2px 8px -2px 10px;
+}
+
+.silver h6::before {
+    content: "";
+    width: 12px;
+    height: 25px;
+    display: inline-block;
+    background: #ededed;
+    margin: -2px 8px -2px 10px;
+}
+
+.bronze h6::before {
+    content: "";
+    width: 12px;
+    height: 25px;
+    display: inline-block;
+    background: #804a00;
+    margin: -2px 8px -2px 10px;
+}
+
+.lifetime h6::before {
+    content: "";
+    width: 12px;
+    height: 25px;
+    display: inline-block;
+    background: var(--py-green);
+    margin: -2px 8px -2px 10px;
+}
+
 .silver h2::before {
     content: "";
     width: 12px;
@@ -775,4 +811,9 @@ a:active {
 .timeline-icon {
     position: relative;
     z-index: 1;
+}
+
+.sponsor-cards .card-footer {
+    background-color: transparent !important;
+    border-top: none !important;
 }
