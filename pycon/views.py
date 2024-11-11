@@ -6,3 +6,6 @@ def HomePageView(request):
 
 def SpeakPageView(request):
     return render(request, "pycon/speak.html")
+
+def CocPageview(request):
+    return render(request, "pycon/coc.html") 
