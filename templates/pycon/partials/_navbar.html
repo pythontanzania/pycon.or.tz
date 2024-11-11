@@ -8,17 +8,21 @@
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li>
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link active" href="{% url 'home' %}">Home</a>
         </li>
         <li>
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="{% url 'speak' %}">Speak</a>
         </li>
         <li>
-          <a class="nav-link" href="whatwedo.html">Programs</a>
+          <a class="nav-link" href="whatwedo.html">Schedule</a>
         </li>
 
         <li>
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#contact">Sponsor</a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="#contact">Code Of Conduct</a>
         </li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>

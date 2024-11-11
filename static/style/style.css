@@ -758,4 +758,5 @@ a:active {
 .pill {
     background-color: var(--bg-py-green);
     color: #fff;
+    width: auto;
 }
