@@ -420,6 +420,15 @@ section {
     margin: -2px 8px -2px 10px;
 }
 
+.lifetime h2::before {
+    content: "";
+    width: 12px;
+    height: 25px;
+    display: inline-block;
+    background: var(--py-green);
+    margin: -2px 8px -2px 10px;
+}
+
 .silver h2::before {
     content: "";
     width: 12px;

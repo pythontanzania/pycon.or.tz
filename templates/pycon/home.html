@@ -165,83 +165,25 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="section-title gold">
-            <h2 class="gold">Gold Sponsors</h2>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
-          <div data-aos="fade-up" data-aos-delay="100">
-            <img src="{% static 'images/sponsors/udsmlogo.png' %}" class="img-fluid rounded-circle" alt="" />
+      {% for category, sponsors in sponsors_by_category.items %}
+        <div class="row">
+          <div class="col-6">
+            <div class="section-title {{ category }}">
+              <h2 class="gold">{{ category|title }} Sponsors</h2>
+            </div>
           </div>
         </div>
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
-          <div data-aos="fade-up" data-aos-delay="200">
-            <img src="{% static 'images/sponsors/binarylabs.png' %}" class="img-fluid rounded-circle" alt="" />
-          </div>
+        <div class="row">
+          {% for sponsor in sponsors %}
+            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+              <div data-aos="fade-up" data-aos-delay="100">
+                <img src="{{ sponsor.logo.url }}" alt="{{ sponsor.name }} Logo" class="img-fluid rounded-circle" />
+              </div>
+            </div>
+          {% endfor %}
         </div>
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
-          <div data-aos="fade-up" data-aos-delay="300">
-            <img src="{% static 'images/sponsors/irabu.png' %}" class="img-fluid rounded-circle" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-6">
-          <div class="section-title silver">
-            <h2 class="">Silver Sponsors</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
-          <div data-aos="fade-up" data-aos-delay="100">
-            <img src="{% static 'images/sponsors/udsmlogo.png' %}" class="img-fluid rounded-circle" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
-          <div data-aos="fade-up" data-aos-delay="200">
-            <img src="{% static 'images/sponsors/binarylabs.png' %}" class="img-fluid rounded-circle" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
-          <div data-aos="fade-up" data-aos-delay="300">
-            <img src="{% static 'images/sponsors/irabu.png' %}" class="img-fluid rounded-circle" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-6">
-          <div class="section-title bronze">
-            <h2 class="">Bronze Sponsors</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
-          <div data-aos="fade-up" data-aos-delay="100">
-            <img src="{% static 'images/sponsors/udsmlogo.png' %}" class="img-fluid rounded-circle" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
-          <div data-aos="fade-up" data-aos-delay="200">
-            <img src="{% static 'images/sponsors/binarylabs.png' %}" class="img-fluid rounded-circle" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
-          <div data-aos="fade-up" data-aos-delay="300">
-            <img src="{% static 'images/sponsors/irabu.png' %}" class="img-fluid rounded-circle" alt="" />
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </section>
 
