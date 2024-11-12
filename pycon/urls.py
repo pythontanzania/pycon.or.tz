@@ -7,5 +7,4 @@ urlpatterns = [
     path("coc/", views.CocPageview, name="coc"),
     path("sponsor/", views.SponsorPageView, name="sponsor"),
     path("schedule/", views.SponsorPageView, name="schedule"),
-
 ]
