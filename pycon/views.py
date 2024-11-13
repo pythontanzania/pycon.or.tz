@@ -19,6 +19,9 @@ def SpeakPageView(request):
 def CocPageview(request):
     return render(request, "pycon/coc.html") 
 
+def SchedulePageView(request):
+    return render(request, "pycon/schedule.html")
+
 def SponsorPageView(request):
     sponsors_by_category = {}
     for category in SponsorCategory.choices:

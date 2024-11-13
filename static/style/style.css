@@ -826,3 +826,18 @@ a:active {
     background-color: transparent !important;
     border-top: none !important;
 }
+
+.nav-pills .nav-link {
+    color: var(--py-green) !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: var(--py-green) !important;
+}
+
+
+.bg-grey {
+    background-color: rgba(31, 68, 41, 0.1);
+}
