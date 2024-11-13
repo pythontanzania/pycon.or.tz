@@ -11,7 +11,7 @@
 
           <h1 class="py-3">PYCON TANZANIA<span>.</span></h1>
           <h2>Join us for the 5th Python Conference at the <span>University of Dar es Salaam, Mlimani City Campus..</span> where Python developers, enthusiasts and learners from across East Africa will gather to share knowledge, build connections and celebrate out growing tech community.</h2>
-          <a href="https://wa.me/message/2DW2QWGHDACTM1" class="mt-3"><button class="btn btn-primary">Buy Tickets</button></a>
+          {% comment %} <a href="https://wa.me/message/2DW2QWGHDACTM1" class="mt-3"><button class="btn btn-primary">Buy Tickets</button></a> {% endcomment %}
         </div>
       </div>
     </div>
@@ -31,7 +31,9 @@
               <i class="bi bi-people-fill"></i>
             </div>
             <h4><a href="">Workshops</a></h4>
-            <p>Lightning talks are short presentations, limited to 5 minutes, on any topic that might interest the Python community. It doesn't have to be something you've created, feel free to share something you've learned or a technique you think others will find useful..</p>
+            <p>
+              <p>Workshops are interactive sessions where you can learn new skills, get hands-on experience with Python, and even build something together. These sessions are designed to be interactive, engaging, and fun for everyone.</p>
+            </p>
           </div>
         </div>
 
@@ -40,7 +42,7 @@
             <div class="icon">
               <i class="bi bi-lightbulb"></i>
             </div>
-            <h4><a href="">Lightning Talks</a></h4>
+            <h4><a href="">Talks</a></h4>
             <p>Lightning talks are short presentations, limited to 5 minutes, on any topic that might interest the Python community. It doesn't have to be something you've created, feel free to share something you've learned or a technique you think others will find useful.</p>
           </div>
         </div>
@@ -50,7 +52,7 @@
             <div class="icon">
               <i class="bi bi-hammer"></i>
             </div>
-            <h4><a href="">Hackathon</a></h4>
+            <h4><a href="">Main Conference</a></h4>
             <p>PyCon is a place for developers from across the country (and beyond) to get together and celebrate Python. But what good is a PyCon without getting your hands dirty writing some code?
 
               .</p>
@@ -71,20 +73,22 @@
         </div>
         <div class="col-6 d-flex justify-content-end">
           <div>
-            <button class="btn btn-primary">See all Speakers</button>
+            {% comment %} <button class="btn btn-primary">See all Speakers</button> {% endcomment %}
           </div>
         </div>
       </div>
-
+      {% comment %} <div>
+        <p>Key note speakers will be updated soon</p>
+      </div> {% endcomment %}
       <div class="row">
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div class="member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
-              <img src="{% static 'images/team/julius.png' %}" class="img-fluid rounded-circle" alt="" />
+              <img src="{% static 'images/2024/speaker.png' %}" class="img-fluid rounded-circle" alt="" />
             </div>
             <div class="member-info">
-              <h4>James Madeli</h4>
-              <span>Co-Founder</span>
+              <h4>John Doe</h4>
+              <span>Title</span>
             </div>
           </div>
         </div>
@@ -92,55 +96,41 @@
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div class="member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
-              <img src="{% static 'images/team/julius.png' %}" class="img-fluid rounded-circle" alt="" />
+              <img src="{% static 'images/2024/speaker.png' %}" class="img-fluid rounded-circle" alt="" />
             </div>
             <div class="member-info">
-              <h4>Sarah Jhonson</h4>
-              <span>Developer</span>
+              <h4>John Doe</h4>
+              <span>Title</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="{% static 'images/2024/speaker.png' %}" class="img-fluid rounded-circle" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>John Doe</h4>
+              <span>Title</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="{% static 'images/2024/speaker.png' %}" class="img-fluid rounded-circle" alt="" />
+            </div>
+            <div class="member-info">
+              <h4>John Doe</h4>
+              <span>Title</span>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="sponsors">
-    <div class="container" data-aos="fade-up">
-      <div class="row">
-        <div class="col-6">
-          <div class="section-title">
-            {% comment %} <h2>Keynote Speakers</h2> {% endcomment %}
-            <p>Sponsors</p>
-          </div>
-        </div>
-        <div class="col-6 d-flex justify-content-end">
-          <div>
-            <button class="btn btn-primary">Become a Sponsor</button>
-          </div>
-        </div>
-      </div>
 
-      {% for category, sponsors in sponsors_by_category.items %}
-        <div class="row">
-          <div class="col-6">
-            <div class="section-title {{ category }}">
-              <h2 class="gold">{{ category|title }} Sponsors</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          {% for sponsor in sponsors %}
-            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
-              <div data-aos="fade-up" data-aos-delay="100">
-                <img src="{{ sponsor.logo.url }}" alt="{{ sponsor.name }} Logo" class="img-fluid rounded-circle" />
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class="parallax-bg" id="venue">
+  {% comment %} <section class="parallax-bg" id="venue">
     <div class="row-parallax-bg">
       <div class="parallax-wrapper">
         <div class="parallax-bg-element"></div>
@@ -158,14 +148,41 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> {% endcomment %}
+  {% comment %} <section id="sponsors">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-6">
+          <div class="section-title">
+            <p>Sponsors</p>
+          </div>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+          <div>
+            <button class="btn btn-primary">Become a Sponsor</button>
+          </div>
+        </div>
+      </div>
 
-  <section id="updates">
+      <div class="row">
+        {% for category, sponsors in sponsors_by_category.items %}
+          {% for sponsor in sponsors %}
+            <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
+              <div data-aos="fade-up" data-aos-delay="100">
+                <img src="{{ sponsor.logo.url }}" alt="{{ sponsor.name }} Logo" class="img-fluid rounded-circle" />
+              </div>
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+  </section> {% endcomment %}
+
+  {% comment %} <section id="updates">
     <div class="container" data-aos="fade-up">
       <div class="row">
         <div class="col-md-6">
           <div class="section-title">
-            {% comment %} <h2>Keynote Speakers</h2> {% endcomment %}
             <p>Event Updates</p>
           </div>
         </div>
@@ -185,5 +202,5 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> {% endcomment %}
 {% endblock %}
