@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  {% include 'pycon/partials/_header.html' %}
+
+  <body>
+    <!-- Loader element - place this at the very top of your body tag -->
+    <div id="pageLoader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Your page content goes here -->
+    <div id="content">
+      {% include 'pycon/partials/_navbar.html' %}
+      {% block content %}
+
+      {% endblock %}
+      {% include 'pycon/partials/_footer.html' %}
+    </div>
+    <script>
+      window.addEventListener('load', function () {
+        document.getElementById('pageLoader').classList.add('loaded')
+        AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: true,
+          mirror: false
+        })
+      })
+    </script>
+  </body>
+</html>

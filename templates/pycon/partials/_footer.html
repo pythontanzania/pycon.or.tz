@@ -1,0 +1,102 @@
+{% load static %}
+<footer>
+  <div>
+    <img src="{% static 'images/2024/footer.png' %}" alt="" class="img-fluid w-100" />
+  </div>
+  <div class="bg-py-green-light">
+    <div class="container">
+      <section>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="widget">
+              <h5>Disclaimer</h5>
+              <p>
+                PyCon Tanzania follows other
+                <a href="https://pycon.org" target="_blank" class="text-primary">Python Conferences</a>
+                | Organized by the
+                <a href="https://mail.python.org/mailman3/lists/tanzania.python.org/" target="_blank" class="text-primary">Python User Group</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="widget">
+              <h5>Our Community</h5>
+              <ul>
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="https://github.com/pycontanzania" target="_blank">Open Source Projects</a>
+                </li>
+                <li>
+                  <a href="{% url 'coc' %}">Code of Conduct<span></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="widget">
+              <h5>Previous Events</h5>
+              <ul>
+                <li>
+                  <a href="/2019">2019</a>
+                </li>
+                <li>
+                  <a href="/2020">2020</a>
+                </li>
+                <li>
+                  <a href="/2021">2021</a>
+                </li>
+                <li>
+                  <a href="/2022">2022</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="widget">
+              <h5>Newsletter</h5>
+              <p>Signup for our newsletter to get the latest news in your inbox.</p>
+              <form class="newsletter-form" action="https://www.getrevue.co/profile/PyconTanzania/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
+                <div class="input-group">
+                  <input class="form-control" type="email" name="EMAIL" placeholder="Email" /><span class="input-group-btn"><button class="btn newsletter-btn" type="submit" value="&rarr;" name="member[subscribe]" id="member_submit">Subscribe</button></span>
+                </div>
+              </form>
+
+              <div class="spacer-10"></div>
+              <small>Your email is safe with us. We don't spam.</small>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="subfooter border-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="de-flex">
+                <div class="de-flex-col">
+                  <a href="{% url 'home' %}">
+                    <img src="{% static 'images/flogo.png' %}" alt="Footer logo" style="height: 40px; width: auto" />
+                    <span class="copy">&copy; Made with ♥ by PyCon Tanzania Community</span>
+                  </a>
+                </div>
+                <div class="de-flex-col">
+                  <div class="de-color-icons">
+                    <a href="https://t.me/joinchat/JVIj_0D4zRIzNjg0" target="_blank"><i class="fa fa-telegram fa-lg"></i></a>
+                    <a href="https://twitter.com/PyconTanzania"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="https://twitter.com/pycon.tanzania"><i class="fa fa-instagram fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/company/pycontanzania"><i class="fa fa-linkedin fa-lg"></i></a>
+                    <a href="https://github.com/pycontanzania"><i class="fa fa-github fa-lg"></i></a>
+                    <a href="https://www.facebook.com/pycontanzania"><i class="fa fa-facebook fa-lg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{% static 'scripts/aos.js' %}"></script>
+  <script src="{% static 'scripts/bootstrap.min.js' %}"></script>
+</footer>

@@ -1,0 +1,241 @@
+{% extends 'pycon/base.html' %}
+{% load static %}
+{% block content %}
+  <section class="">
+    <div class="container mt-5" data-aos="fade-up">
+      <div class="section-title text-center">
+        <p class="text-white"></p>
+        <h2 class="text-white pt-2"></h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-12 d-flex align-items-stretch rounded" data-aos="zoom-in">
+          <div class="d-none d-lg-flex align-items-center justify-content-around">
+            <!-- Cards only shown on tablets and larger screens -->
+            <img src="{% static 'images/2020/3.jpg' %}" class="img-fluid w-50 position-absolute rounded" alt="PyCon Tanzania Event" style=" transform: rotate(-15deg); top: -10px; left: 20px; z-index: 1;" />
+
+            <img src="{% static 'images/2020/8.jpg' %}" class="w-50 img-fluid position-absolute rounded" alt="PyCon Tanzania Event" style=" transform: rotate(15deg); top: -10px; right: 50px; z-index: 2;" />
+
+            <img src="{% static 'images/2020/10.jpg' %}" class="w-50 rounded" alt="PyCon Tanzania Event" style="z-index: 3;" />
+          </div>
+
+          <!-- Single card shown only on mobile -->
+          <div class="d-lg-none">
+            <img src="{% static 'images/2020/8.jpg' %}" class="card-img-top img-fluid" alt="PyCon Tanzania Event" />
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 d-flex align-items-stretch rounded" data-aos="zoom-in" data-aos-delay="100">
+          <div class="">
+            <h4><a href="">Speak at the Python Tanzania Conference 2024</a></h4>
+            <h5>Call for Speakers, Presentation and Tutorials</h5>
+            <p>Join us as a speaker at PyCon Tanzania as a speaker! Whether you're a professional developer, hobbyist, or simply passionate about Python and open source, we want to hear your voice.</p>
+            <div>
+              <h5>Our conference features three tracks:</h5>
+              <ul>
+                <li>
+                  <b>Talks (Main Conference):</b> Traditional presentations showcasing diverse perspectives and experiences from our inclusive Python community
+                </li>
+                <li>
+                  <b>Tutorials:</b> In-depth workshops aimed at advancing Python skills and open source development in Tanzania, with all skill levels welcome
+                </li>
+                <li>
+                  <b>Lightning Talks (5 minutes):</b>
+                  Quick, energetic presentations focused on a single compelling idea - perfect for first-time speakers!
+                </li>
+              </ul>
+              <p>Share your Python journey with us. All experience levels welcome!</p>
+              <p>
+                <a href="mailto:speak@pycon.or.tz"><b>Submit your presentation/tutorial: speak(at)pycon.or.tz</b></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 d-flex align-items-stretch rounded" data-aos="zoom-in" data-aos-delay="100">
+          <div class="">
+            <h4><a href="">Presentations and Tutorials</a></h4>
+            <p>Topics must be relevant to Python Language and Open Source Software:</p>
+            <ul>
+              <li>The Real world application of Python language</li>
+              <li>Python in Education and Open Source Software</li>
+              <li>Web applications using Python frameworks</li>
+              <li>The applications of Python in Data Analysis</li>
+              <li>The applications of Python in Cyber Security</li>
+              <li>Diversity of speakers in the Python Community</li>
+            </ul>
+
+            <h4>Best Practices for Speakers</h4>
+            <ul>
+              <li>
+                <strong>Apply:</strong> Even if you have a vague idea, submit a proposal. We're available for help with ideas and feedback (contact information is in the section below). Don't worry about communication skills or English - we are there to help with that too. And our focus is more on the content.
+              </li>
+
+              <li>
+                <strong>Diversity:</strong> We in the Python community believe in making our community more diverse. This means we are encouraging content from diverse walks of life. This also means we want to improve participation from under-represented groups.
+              </li>
+
+              <li>
+                <strong>Make it detailed:</strong> Add as much detail as possible to the proposal. Add the presentation slides if you already have one. Add a short minute video giving a summary of the proposal. More detail helps reviewers make better judgement.
+              </li>
+
+              <li>
+                <strong>Propose early:</strong> We will start the review process as the proposals come in, and not at the end. Proposals submitted early will get more attention and feedback.
+              </li>
+
+              <li>
+                <strong>The code of conduct:</strong> All speakers are expected to have read and adhere to the conference Code of Conduct. Take a look at the code of conduct, and be mindful of it. The gist is, avoid using sexist language.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 rounded" data-aos="zoom-in" data-aos-delay="100">
+          <div class="">
+            <h4><a href="">Conference Timeline</a></h4>
+          </div>
+          {% comment %} <div class="de-box border-0 mb30">
+            <div class="sm-icon mb30 d-flex">
+              <i class="bi bi-calendar3 me-2"></i>
+              <div class="si-inner">
+                <h5>01st to 6th Oct, 2024</h5>
+                Call for Presentations
+              </div>
+            </div>
+            <div class="sm-icon mb30 d-flex">
+              <i class="bi bi-calendar3 me-2"></i>
+              <div class="si-inner">
+                <h5>12th Nov, 2024</h5>
+                Final Accepting of Draft Presentations
+              </div>
+            </div>
+            <div class="sm-icon mb30 d-flex">
+              <i class="bi bi-calendar3 me-2"></i>
+              <div class="si-inner">
+                <h5>25th Nov, 2024</h5>
+                Publishing of Accepted Speakers
+              </div>
+            </div>
+            <div class="sm-icon mb30 d-flex">
+              <i class="bi bi-calendar3 me-2"></i>
+              <div class="si-inner">
+                <h5>30th Nov, 2024</h5>
+                Publishing of Final Program
+              </div>
+            </div>
+            <div class="sm-icon mb30 d-flex">
+              <i class="bi bi-calendar3 me-2"></i>
+              <div class="si-inner">
+                <h5>1st - 5th December, 2024</h5>
+                Tutorials and Conference
+              </div>
+            </div>
+            <div class="sm-icon no-bottom d-flex">
+              <i class="bi bi-calendar3 me-2"></i>
+              <div class="si-inner">
+                <h5>Location</h5>
+                <a href="" target="_blank">University of Dar es Salaam &rarr;</a>
+              </div>
+            </div>
+          </div> {% endcomment %}
+          <div class="container">
+            <div class="timeline position-relative">
+              <!-- Timeline item 1 -->
+              <div class="row mb-4">
+                <div class="col-auto">
+                  <div class="timeline-icon bg-success-subtle rounded-circle p-2">
+                    <i class="bi bi-calendar3 text-success"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="mb-0">
+                    <strong>01st - 6th Oct, 2024</strong>
+                  </p>
+                  <p class="text-muted mb-0">Call for Presentations</p>
+                </div>
+              </div>
+
+              <!-- Timeline item 2 -->
+              <div class="row mb-4">
+                <div class="col-auto">
+                  <div class="timeline-icon bg-success-subtle rounded-circle p-2">
+                    <i class="bi bi-calendar3 text-success"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="mb-0">
+                    <strong>12th Nov, 2024</strong>
+                  </p>
+                  <p class="text-muted mb-0">Final Accepting of Draft Presentations</p>
+                </div>
+              </div>
+
+              <!-- Timeline item 3 -->
+              <div class="row mb-4">
+                <div class="col-auto">
+                  <div class="timeline-icon bg-success-subtle rounded-circle p-2">
+                    <i class="bi bi-calendar3 text-success"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="mb-0">
+                    <strong>25th Nov, 2024</strong>
+                  </p>
+                  <p class="text-muted mb-0">Publishing of Accepted Speakers</p>
+                </div>
+              </div>
+
+              <!-- Timeline item 4 -->
+              <div class="row mb-4">
+                <div class="col-auto">
+                  <div class="timeline-icon bg-success-subtle rounded-circle p-2">
+                    <i class="bi bi-calendar3 text-success"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="mb-0">
+                    <strong>30th Nov, 2024</strong>
+                  </p>
+                  <p class="text-muted mb-0">Publishing of Final Program</p>
+                </div>
+              </div>
+
+              <!-- Timeline item 5 -->
+              <div class="row mb-4">
+                <div class="col-auto">
+                  <div class="timeline-icon bg-success-subtle rounded-circle p-2">
+                    <i class="bi bi-calendar3 text-success"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="mb-0">
+                    <strong>1st - 5th December, 2024</strong>
+                  </p>
+                  <p class="text-muted mb-0">Tutorials and Conference</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <style>
+            .timeline::before {
+              content: '';
+              position: absolute;
+              left: 16px;
+              height: 90%;
+              border-left: 2px solid #e9ecef;
+            }
+            
+            .timeline-icon {
+              position: relative;
+              z-index: 1;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
