@@ -22,6 +22,9 @@ def CocPageview(request):
 def SchedulePageView(request):
     return render(request, "pycon/schedule.html")
 
+def Pycon2022PageView(request):
+    return render(request, "pycon/past/2022.html")
+
 def SponsorPageView(request):
     sponsors_by_category = {}
     for category in SponsorCategory.choices:

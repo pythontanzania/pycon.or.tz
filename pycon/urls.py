@@ -7,4 +7,5 @@ urlpatterns = [
     path("coc/", views.CocPageview, name="coc"),
     path("sponsor/", views.SponsorPageView, name="sponsor"),
     path("schedule/", views.SchedulePageView, name="schedule"),
+    path("2022/", views.Pycon2022PageView, name="2022")
 ]
