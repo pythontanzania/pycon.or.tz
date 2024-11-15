@@ -6,21 +6,21 @@
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li>
-          <a class="nav-link active" href="{% url 'home' %}">Home</a>
+          <a class="nav-link {% if request.resolver_match.view_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
         </li>
         <li>
-          <a class="nav-link" href="{% url 'speak' %}">Speak</a>
+          <a class="nav-link {% if request.resolver_match.view_name == 'speak' %}active{% endif %}" href="{% url 'speak' %}">Speak</a>
         </li>
         <li>
-          <a class="nav-link" href="{% url 'schedule' %}">Schedule</a>
-        </li>
-
-        <li>
-          <a class="nav-link" href="{% url 'sponsor' %}">Sponsor</a>
+          <a class="nav-link {% if request.resolver_match.view_name == 'schedule' %}active{% endif %}" href="{% url 'schedule' %}">Schedule</a>
         </li>
 
         <li>
-          <a class="nav-link" href="{% url 'coc' %}">Code Of Conduct</a>
+          <a class="nav-link {% if request.resolver_match.view_name == 'sponsor' %}active{% endif %}" href="{% url 'sponsor' %}">Sponsor</a>
+        </li>
+
+        <li>
+          <a class="nav-link {% if request.resolver_match.view_name == 'coc' %}active{% endif %}" href="{% url 'coc' %}">Code Of Conduct</a>
         </li>
         <li>
           <a href="https://wa.me/message/2DW2QWGHDACTM1"><button class="btn btn-primary">Buy Tickets</button></a>
