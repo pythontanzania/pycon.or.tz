@@ -2,8 +2,6 @@
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center justify-content-lg-between">
     <h1 class="logo me-auto me-lg-0"><a href="{% url 'home' %}"><span><img class="logo-light" src="{% static 'images/pycon-black.jpg' %}" alt="" /></span></a></h1>
-    <!-- Uncomment below if you prefer to use an image logo -->
-    <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
@@ -24,9 +22,9 @@
         <li>
           <a class="nav-link" href="{% url 'coc' %}">Code Of Conduct</a>
         </li>
-        {% comment %} <li>
+        <li>
           <a href="https://wa.me/message/2DW2QWGHDACTM1"><button class="btn btn-primary">Buy Tickets</button></a>
-        </li> {% endcomment %}
+        </li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
