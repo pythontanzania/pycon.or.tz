@@ -2,30 +2,47 @@
 {% load static %}
 {% block content %}
   <section id="whysponsor">
-    <div class="container" data-aos="fade-up">
-      <div class="row">
+    <div class="container mt-5" data-aos="fade-up">
+      <div class="row justify-content-center">
         <div class="col-lg-12 col-md-12 d-flex align-items-stretch rounded" data-aos="zoom-in" data-aos-delay="100">
-          <div class="">
-            <h4><a href="">Why Sponsor PyCon Tanzania</a></h4>
-            <p>Pycon Tanzania is run by volunteers on a non-profit basis. All the money we receive will go towards covering the costs of the event and reducing the cost for our attende</p>
-            <div>
-              {% comment %} <h5>This includes:</h5>
-              <ul class="">
-                <li>Catering and refreshments</li>
-                <li>Venue rent</li>
-                <li>Technical services</li>
-                <li>Financial assistance for accommodation and travel for attendees and speakers on a low budget</li>
-                <li>Video recordings for talks</li>
-                <li>Conference merchandise and program booklet</li>
-                <li>Basic running expenses</li>
-              </ul>
-              <p>Anything left over will be used for supporting future non-profit events.</p> {% endcomment %}
-              <p>
-                Join us as we make history with the 5th Python Developer Conference in Tanzania! Be a part of a thriving community of developers and position your brand at the forefront of the rapidly growing technology sector in Africa. With an expected 200 attendees from both the local and international community, sponsoring this landmark event is a unique opportunity to connect with and reach a highly engaged audience.
+          <div class="sponsorship-content p-4 rounded">
+            <h2 class="text-py-green mb-4">Why Sponsor PyCon Tanzania</h2>
 
-                If you are interested in becoming a sponsor or if you have any questions, then please email us at <a href="mailto:sponsor@pycon.or.tz"><b>sponsor@pycon.or.tz</b></a>
+            <div class="intro-text mb-4">
+              <p class="lead">
+                Pycon Tanzania is run by volunteers on a non-profit basis. All the money we receive will go towards covering the costs of the event and reducing the cost for our attendees.
               </p>
-              <p></p>
+            </div>
+
+            {% comment %}
+            <div class="includes-section mb-4">
+              <h5 class="text-py-green">This includes:</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="fas fa-check text-py-green me-2"></i>Catering and refreshments</li>
+                <li class="mb-2"><i class="fas fa-check text-py-green me-2"></i>Venue rent</li>
+                <li class="mb-2"><i class="fas fa-check text-py-green me-2"></i>Technical services</li>
+                <li class="mb-2"><i class="fas fa-check text-py-green me-2"></i>Financial assistance for accommodation and travel</li>
+                <li class="mb-2"><i class="fas fa-check text-py-green me-2"></i>Video recordings for talks</li>
+                <li class="mb-2"><i class="fas fa-check text-py-green me-2"></i>Conference merchandise and program booklet</li>
+                <li class="mb-2"><i class="fas fa-check text-py-green me-2"></i>Basic running expenses</li>
+              </ul>
+              <p class="fst-italic">Anything left over will be used for supporting future non-profit events.</p>
+            </div>
+            {% endcomment %}
+
+            <div class="call-to-action">
+              <p class="mb-4">
+                Join us as we make history with the 5th Python Developer Conference in Tanzania! Be a part of a thriving community of developers and position your brand at the forefront of the rapidly growing technology sector in Africa. With an expected 200 attendees from both the local and international community, sponsoring this landmark event is a unique opportunity to connect with and reach a highly engaged audience.
+              </p>
+
+              <div class="contact-info p-3 bg-light rounded">
+                <p class="mb-0">
+                  If you are interested in becoming a sponsor or if you have any questions, please email us at
+                  <a href="mailto:sponsor@pycon.or.tz" class="text-py-green fw-bold text-decoration-none">
+                    sponsor@pycon.or.tz
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -33,7 +50,7 @@
     </div>
 
     <div class="container py-5">
-      <h2 class="mb-5">Our Sponsorship Packages</h2>
+      <h2 class="mb-5 text-center text-py-green">Our Sponsorship Packages</h2>
 
       <div class="d-flex justify-content-center mb-3">
         <div>
@@ -201,7 +218,7 @@
       const currencySwitch = document.getElementById('currencySwitch')
       const usdValues = document.querySelectorAll('.usd-value')
       const tzsValues = document.querySelectorAll('.tzs-value')
-      
+
       currencySwitch.addEventListener('change', () => {
         usdValues.forEach((value) => value.classList.toggle('d-none'))
         tzsValues.forEach((value) => value.classList.toggle('d-none'))
@@ -212,7 +229,7 @@
       <div class="row">
         <div class="col-6">
           <div class="section-title">
-            <p>Our Current Sponsors</p>
+            <h1 class="text-py-green">Our Current Sponsors</h1>
           </div>
         </div>
         <div class="col-6 d-flex justify-content-end">
@@ -234,4 +251,13 @@
       </div>
     </div>
   </section>
+<style>
+.text-py-green {
+  color: var(--py-green);
+}
+
+.bg-py-green {
+  background-color: var(--py-green);
+}
+</style>
 {% endblock %}
