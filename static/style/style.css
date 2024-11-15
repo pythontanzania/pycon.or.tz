@@ -95,8 +95,7 @@ body {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-    background: rgba(0, 0, 0, 0.8);
-    /* background: rgba(255, 252, 237, 0.8); */
+    background: #fff;
 }
 
 #header .logo {
@@ -248,7 +247,7 @@ body {
   * Mobile Navigation 
   */
 .mobile-nav-toggle {
-    color: #fff;
+    color: #000;
     font-size: 28px;
     cursor: pointer;
     display: none;
