@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView
+from .models import Speaker
+
 # Create your views here.
 class HomePageView(TemplateView):
     template_name = "pycon2024/home.html"
@@ -15,3 +17,8 @@ class SchedulePageView(TemplateView):
 
 class SpeakPageView(TemplateView):
     template_name = "pycon2024/speak.html"
+
+class SpeakerListView(ListView):
+    model = Speaker
+    template_name = "pycon2024/speakers.html"
+    context_object_name = 'speakers'
