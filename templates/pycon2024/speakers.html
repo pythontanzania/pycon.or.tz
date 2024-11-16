@@ -1,0 +1,45 @@
+{% extends '_2024.html' %}
+
+{% block content %}
+  <section id="section-speakers" class="pt60 pb60">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Our Speakers</h2>
+          <div class="spacer-20"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        {% for speaker in speakers %}
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              {% if speaker.photo %}
+                <img src="{{ speaker.photo.url }}" class="card-img-top" alt="{{ speaker.name }}" />
+              {% endif %}
+              <div class="card-body">
+                <h5 class="card-title">{{ speaker.name }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ speaker.talk_title }}</h6>
+                <p class="card-text">{{ speaker.bio|truncatewords:30 }}</p>
+                <div class="social-icons">
+                  {% if speaker.twitter %}
+                    <a href="{{ speaker.twitter }}" target="_blank" class="me-2"><i class="fa fa-twitter"></i></a>
+                  {% endif %}
+                  {% if speaker.github %}
+                    <a href="{{ speaker.github }}" target="_blank" class="me-2"><i class="fa fa-github"></i></a>
+                  {% endif %}
+                  {% if speaker.linkedin %}
+                    <a href="{{ speaker.linkedin }}" target="_blank" class="me-2"><i class="fa fa-linkedin"></i></a>
+                  {% endif %}
+                  {% if speaker.website %}
+                    <a href="{{ speaker.website }}" target="_blank"><i class="fa fa-globe"></i></a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

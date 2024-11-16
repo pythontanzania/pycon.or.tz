@@ -6,6 +6,7 @@ from .views import (
     SponsorPageView,
     SchedulePageView,
     SpeakPageView,
+    SpeakerListView,
 )
 
 urlpatterns = [
@@ -14,4 +15,5 @@ urlpatterns = [
     path("sponsor/", SponsorPageView.as_view(), name="sponsor"),
     path("schedule/", SchedulePageView.as_view(), name="schedule"),
     path("speak/", SpeakPageView.as_view(), name="speak"),
+    path("speakers/", SpeakerListView.as_view(), name="speakers"),
 ]
