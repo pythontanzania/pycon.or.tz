@@ -29,7 +29,7 @@ jobs:
         script: |
           cd ${{ secrets.TARGET }}
           source venv/bin/activate
-          pip install -r requirements.txt
+          uv pip install -r requirements.txt
           python manage.py makemigrations
           python manage.py migrate
           # python manage.py collectstatic -v 2 --noinput
