@@ -28,7 +28,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd ${{ secrets.TARGET }}
-          source venv/bin/activate
+          source .venv/bin/activate
           uv pip install -r requirements.txt
           python manage.py makemigrations
           python manage.py migrate
