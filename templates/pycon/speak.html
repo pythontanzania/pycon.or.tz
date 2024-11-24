@@ -1,0 +1,305 @@
+{% extends 'pycon/base.html' %}
+{% load static %}
+{% block content %}
+  <section class="bg-light-subtle">
+    <div class="container mt-5" data-aos="fade-up">
+      <div class="section-title text-center">
+        <p class="text-white"></p>
+        <h2 class="text-white pt-2"></h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6 col-md-12" data-aos="zoom-in">
+          <div class="position-relative h-100">
+            <!-- Desktop/Tablet Gallery -->
+            <div class="d-none d-lg-flex align-items-center justify-content-center h-100">
+              <img src="{% static 'images/2020/3.jpg' %}" class="img-fluid rounded shadow-sm position-absolute" alt="PyCon Tanzania Event" style="width: 45%; transform: rotate(-15deg); top: 10%; left: 5%; z-index: 1;">
+              <img src="{% static 'images/2020/8.jpg' %}" class="img-fluid rounded shadow-sm position-absolute" alt="PyCon Tanzania Event" style="width: 45%; transform: rotate(15deg); top: 10%; right: 5%; z-index: 2;">
+              <img src="{% static 'images/2020/10.jpg' %}" class="img-fluid rounded shadow-sm" alt="PyCon Tanzania Event" style="width: 45%; z-index: 3;">
+            </div>
+            <!-- Mobile Gallery -->
+            <div class="d-lg-none">
+              <img src="{% static 'images/2020/8.jpg' %}" class="img-fluid rounded shadow-sm w-100" alt="PyCon Tanzania Event">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12" data-aos="zoom-in" data-aos-delay="100">
+          <div class="border-0 h-100">
+            <div class="card-body p-4">
+              <h3 class="card-title mb-4" style="color: var(--py-green);">Speak at Python Tanzania Conference 2024</h3>
+              <h5 class="text-muted mb-4">Call for Speakers, Presentations and Tutorials</h5>
+              <p class="lead">Join us as a speaker at PyCon Tanzania! Whether you're a professional developer, hobbyist, or simply passionate about Python and open source, we want to hear your voice.</p>
+
+              <div class="mt-4">
+                <h5 class="mb-3">Our conference features three tracks:</h5>
+                <div class="list-group">
+                  <div class="list-group-item border-0 bg-light-subtle mb-2">
+                    <h6 class="mb-1">Talks (Main Conference)</h6>
+                    <p class="mb-0 text-muted">Traditional presentations showcasing diverse perspectives and experiences from our inclusive Python community</p>
+                  </div>
+                  <div class="list-group-item border-0 bg-light-subtle mb-2">
+                    <h6 class="mb-1">Tutorials</h6>
+                    <p class="mb-0 text-muted">In-depth workshops aimed at advancing Python skills and open source development in Tanzania, with all skill levels welcome</p>
+                  </div>
+                  <div class="list-group-item border-0 bg-light-subtle">
+                    <h6 class="mb-1">Lightning Talks (5 minutes)</h6>
+                    <p class="mb-0 text-muted">Quick, energetic presentations focused on a single compelling idea - perfect for first-time speakers!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <p class="mb-2">Share your Python journey with us. All experience levels welcome!</p>
+                <a href="mailto:speak@pycon.or.tz" class="btn btn-primary text-white">
+                  <i class="bi bi-envelope me-2"></i>Submit Your Proposal
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="container" data-aos="fade-up">
+      <div class="row g-2">
+        <div class="col-lg-8 col-md-12 d-flex align-items-stretch rounded" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+              <h4 class="card-title mb-4" style="color: var(--py-green);">Presentations and Tutorials</h4>
+              <div class="mb-5">
+                <p class="lead">Topics must be relevant to Python Language and Open Source Software:</p>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center bg-light-subtle p-3 rounded">
+                      <i class="bi bi-check-circle-fill text-success me-3"></i>
+                      <span>The Real world application of Python language</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center bg-light-subtle p-3 rounded">
+                       <i class="bi bi-check-circle-fill text-success me-3"></i>
+                       <span>Python in Education and Open Source Software</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="d-flex align-items-center bg-light-subtle p-3 rounded">
+                       <i class="bi bi-check-circle-fill text-success me-3"></i>
+                       <span>Web applications using Python frameworks</span>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center bg-light-subtle p-3 rounded">
+                      <i class="bi bi-check-circle-fill text-success me-3"></i>
+                      <span>The applications of Python in Data Analysis</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center bg-light-subtle p-3 rounded">
+                      <i class="bi bi-check-circle-fill text-success me-3"></i>
+                      <span>The applications of Python in Cyber Security</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center bg-light-subtle p-3 rounded">
+                      <i class="bi bi-check-circle-fill text-success me-3"></i>
+                      <span>Diversity of speakers in the Python Community</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 rounded" data-aos="zoom-in" data-aos-delay="100">
+          <div class="">
+            <h4><a href="">Conference Timeline</a></h4>
+          </div>
+          <div class="container">
+            <div class="timeline position-relative">
+              <!-- Timeline item 1 -->
+              <div class="row mb-4">
+                <div class="col-auto">
+                  <div class="timeline-icon bg-success-subtle rounded-circle p-2">
+                    <i class="bi bi-calendar3 text-success"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="mb-0">
+                    <strong>01st - 6th Oct, 2024</strong>
+                  </p>
+                  <p class="text-muted mb-0">Call for Presentations</p>
+                </div>
+              </div>
+
+              <!-- Timeline item 2 -->
+              <div class="row mb-4">
+                <div class="col-auto">
+                  <div class="timeline-icon bg-success-subtle rounded-circle p-2">
+                    <i class="bi bi-calendar3 text-success"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="mb-0">
+                    <strong>12th Nov, 2024</strong>
+                  </p>
+                  <p class="text-muted mb-0">Final Accepting of Draft Presentations</p>
+                </div>
+              </div>
+
+              <!-- Timeline item 3 -->
+              <div class="row mb-4">
+                <div class="col-auto">
+                  <div class="timeline-icon bg-success-subtle rounded-circle p-2">
+                    <i class="bi bi-calendar3 text-success"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="mb-0">
+                    <strong>25th Nov, 2024</strong>
+                  </p>
+                  <p class="text-muted mb-0">Publishing of Accepted Speakers</p>
+                </div>
+              </div>
+
+              <!-- Timeline item 4 -->
+              <div class="row mb-4">
+                <div class="col-auto">
+                  <div class="timeline-icon bg-success-subtle rounded-circle p-2">
+                    <i class="bi bi-calendar3 text-success"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="mb-0">
+                    <strong>30th Nov, 2024</strong>
+                  </p>
+                  <p class="text-muted mb-0">Publishing of Final Program</p>
+                </div>
+              </div>
+
+              <!-- Timeline item 5 -->
+              <div class="row mb-4">
+                <div class="col-auto">
+                  <div class="timeline-icon bg-success-subtle rounded-circle p-2">
+                    <i class="bi bi-calendar3 text-success"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="mb-0">
+                    <strong>1st - 5th December, 2024</strong>
+                  </p>
+                  <p class="text-muted mb-0">Tutorials and Conference</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="container" data-aos="fade-up">
+      <div class="speaker-guidelines">
+       <h4 class="card-title mb-4" style="color: var(--py-green);">
+           <i class="fas fa-microphone-alt me-2"></i>Best Practices for Speakers
+       </h4>
+
+       <ul class="guidelines-list list-unstyled">
+         <li class="guideline-item mb-4">
+           <h5 class="guideline-title">
+             <span class="badge me-2" style="background-color: var(--py-green);">1</span>Apply
+           </h5>
+           <p class="guideline-content">
+             Even if you have a vague idea, submit a proposal. We're available for help with ideas and feedback (contact information is in the section below). Don't worry about communication skills or English - we are there to help with that too. And our focus is more on the content.
+           </p>
+         </li>
+
+         <li class="guideline-item mb-4">
+           <h5 class="guideline-title">
+             <span class="badge me-2" style="background-color: var(--py-green);">2</span>Diversity
+           </h5>
+           <p class="guideline-content">
+             We in the Python community believe in making our community more diverse. This means we are encouraging content from diverse walks of life. This also means we want to improve participation from under-represented groups.
+           </p>
+         </li>
+
+         <li class="guideline-item mb-4">
+           <h5 class="guideline-title">
+             <span class="badge me-2" style="background-color: var(--py-green);">3</span>Make it detailed
+           </h5>
+           <p class="guideline-content">
+             Add as much detail as possible to the proposal. Add the presentation slides if you already have one. Add a short minute video giving a summary of the proposal. More detail helps reviewers make better judgement.
+           </p>
+         </li>
+
+         <li class="guideline-item mb-4">
+           <h5 class="guideline-title">
+             <span class="badge me-2" style="background-color: var(--py-green);">4</span>Propose early
+           </h5>
+           <p class="guideline-content">
+             We will start the review process as the proposals come in, and not at the end. Proposals submitted early will get more attention and feedback.
+           </p>
+         </li>
+
+         <li class="guideline-item mb-4">
+           <h5 class="guideline-title">
+             <span class="badge me-2" style="background-color: var(--py-green);">5</span>The code of conduct
+           </h5>
+           <p class="guideline-content">
+             All speakers are expected to have read and adhere to the conference Code of Conduct. Take a look at the code of conduct, and be mindful of it. The gist is, avoid using sexist language.
+           </p>
+         </li>
+       </ul>
+      </div>
+    </div>
+  </section>
+  <style>
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 16px;
+      height: 90%;
+      border-left: 2px solid #e9ecef;
+    }
+
+    .timeline-icon {
+      position: relative;
+      z-index: 1;
+    }
+
+    .speaker-guidelines {
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+
+    .guidelines-list {
+      margin: 0;
+      padding: 0;
+    }
+
+    .guideline-item {
+      padding: 1rem;
+      border-left: 3px solid var(--py-green);
+      background-color: white;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .guideline-title {
+      color: var(--py-green);
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .guideline-content {
+      color: #6c757d;
+      margin-bottom: 0;
+      line-height: 1.6;
+    }
+
+    .badge {
+      font-weight: normal;
+      font-size: 0.8rem;
+    }
+  </style>
+{% endblock %}
