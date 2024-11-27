@@ -20,6 +20,17 @@ ALLOWED_HOSTS = [
     "python.tz",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "http://pycon.tz",
+    "http://www.pycon.tz",
+    "https://pycon.tz",
+    "https://www.pycon.tz",
+    "http://pycon.or.tz",
+    "http://www.pycon.or.tz",
+    "https://pycon.or.tz",
+    "https://www.pycon.or.tz",
+]
+
 # APPS
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
