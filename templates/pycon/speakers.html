@@ -1,0 +1,83 @@
+{% extends 'pycon/base.html' %}
+{% load static %}
+{% block content %}
+  <section id="speakers" class="mt-5">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-6">
+          <div class="section-title">
+            <p>Speakers at Pycon 2024</p>
+          </div>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+          <div></div>
+        </div>
+      </div>
+      <div class="row">
+        {% for speaker in speakers %}
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="{{ speaker.image.url }}" class="img-fluid rounded-circle" alt="{{ speaker.name }}" />
+              </div>
+              <div class="member-info">
+                <h4>{{ speaker.name }}</h4>
+                <span>{{ speaker.title }}</span>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 16px;
+      height: 90%;
+      border-left: 2px solid #e9ecef;
+    }
+    
+    .timeline-icon {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .speaker-guidelines {
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+    
+    .guidelines-list {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .guideline-item {
+      padding: 1rem;
+      border-left: 3px solid var(--py-green);
+      background-color: white;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .guideline-title {
+      color: var(--py-green);
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .guideline-content {
+      color: #6c757d;
+      margin-bottom: 0;
+      line-height: 1.6;
+    }
+    
+    .badge {
+      font-weight: normal;
+      font-size: 0.8rem;
+    }
+  </style>
+{% endblock %}

@@ -9,7 +9,7 @@
           <a class="nav-link {% if request.resolver_match.view_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
         </li>
         <li>
-          <a class="nav-link {% if request.resolver_match.view_name == 'speak' %}active{% endif %}" href="{% url 'speak' %}">Speak</a>
+          <a class="nav-link {% if request.resolver_match.view_name == 'speakers' %}active{% endif %}" href="{% url 'speakers' %}">Speakers</a>
         </li>
         <li>
           <a class="nav-link {% if request.resolver_match.view_name == 'schedule' %}active{% endif %}" href="{% url 'schedule' %}">Schedule</a>
