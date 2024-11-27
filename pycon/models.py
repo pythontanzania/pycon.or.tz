@@ -23,6 +23,7 @@ class Sponsor(models.Model):
 class Speaker(models.Model):
     name = models.CharField(max_length=100)
     title = models.CharField(max_length=200)
+    topic = models.CharField(max_length=200)
     image = models.ImageField(upload_to='speaker_images')
     order = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)

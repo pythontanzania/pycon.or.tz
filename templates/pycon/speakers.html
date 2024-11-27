@@ -1,12 +1,12 @@
 {% extends 'pycon/base.html' %}
 {% load static %}
 {% block content %}
-  <section id="speakers" class="mt-5">
+  <section id="speakers">
     <div class="container" data-aos="fade-up">
       <div class="row">
         <div class="col-6">
           <div class="section-title">
-            <p>Speakers at Pycon 2024</p>
+            <p>Keynote Speakers</p>
           </div>
         </div>
         <div class="col-6 d-flex justify-content-end">
@@ -23,6 +23,7 @@
               <div class="member-info">
                 <h4>{{ speaker.name }}</h4>
                 <span>{{ speaker.title }}</span>
+                <p class="mt-2 text-muted">{{ speaker.topic }}</p>
               </div>
             </div>
           </div>
@@ -78,6 +79,12 @@
     .badge {
       font-weight: normal;
       font-size: 0.8rem;
+    }
+    
+    .member-info p {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      line-height: 1.4;
     }
   </style>
 {% endblock %}
