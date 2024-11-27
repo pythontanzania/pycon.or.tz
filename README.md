@@ -20,7 +20,7 @@
 PyCon website can be installed via Pip, Pipenv, or Docker depending upon your setup. To start, clone the repo to your local computer and change into the proper directory.
 
 ```
-$ git clone https://github.com/pycontanzania/pycon.or.tz.git pycontz
+$ git clone https://github.com/pythontanzania/pycon.or.tz.git pycontz
 $ cd pycontz
 ```
 
@@ -86,7 +86,7 @@ INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome! See [CONTRIBUTING.md](https://github.com/pycontanzania/website/blob/master/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome! See [CONTRIBUTING.md](https://github.com/pythontanzania/website/blob/master/CONTRIBUTING.md).
 
 ## ⭐️ Support
 
