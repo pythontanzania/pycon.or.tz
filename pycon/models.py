@@ -19,3 +19,17 @@ class Sponsor(models.Model):
     
     def __str__(self):
         return self.name
+
+class Speaker(models.Model):
+    name = models.CharField(max_length=100)
+    title = models.CharField(max_length=200)
+    image = models.ImageField(upload_to='speaker_images')
+    order = models.IntegerField(default=0)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['order', 'name']
+
+    def __str__(self):
+        return self.name

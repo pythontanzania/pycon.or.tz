@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from .models import Sponsor, SponsorCategory
+from .models import Sponsor, SponsorCategory, Speaker
+
 # Create your views here.
 def HomePageView(request):
     sponsors_by_category = {}
@@ -15,6 +16,10 @@ def HomePageView(request):
 
 def SpeakPageView(request):
     return render(request, "pycon/speak.html")
+
+def SpeakerPageView(request):
+    speakers = Speaker.objects.all()
+    return render(request, "pycon/speakers.html", {'speakers': speakers})
 
 def CocPageview(request):
     return render(request, "pycon/coc.html") 
