@@ -9,7 +9,7 @@ class SponsorAdmin(admin.ModelAdmin):
 
 @admin.register(Speaker)
 class SpeakerAdmin(admin.ModelAdmin):
-    list_display = ('name', 'title', 'order')
+    list_display = ('name', 'title', 'topic', 'order')
     list_editable = ('order',)
-    search_fields = ('name', 'title')
+    search_fields = ('name', 'title', 'topic')
     ordering = ('order', 'name')
