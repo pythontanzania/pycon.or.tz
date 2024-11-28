@@ -6,7 +6,7 @@
       <div class="row justify-content-center">
         <div class="col-12 text-center">
           <div class="section-title" data-aos="fade-up" data-aos-delay="200">
-            <br><br>
+            <br /><br />
             <h1 class="display-4 text-center mb-4">Conference Speakers</h1>
             <h3 style="font-size: 1.17em; text-align: center; margin-bottom: 1.5rem; color: var(--py-green);"><strong>Meet our exceptional lineup of Python experts sharing their knowledge and experiences</strong></h3>
           </div>
@@ -17,9 +17,9 @@
       </div>
       <div class="row justify-content-center">
         {% for speaker in speakers %}
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member  align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img  d-flex align-items-center">
+          <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+            <div class="member align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img d-flex align-items-center">
                 <img src="{{ speaker.image.url }}" class="img-fluid rounded-circle mx-auto border border-3 border-success" alt="{{ speaker.name }}" width="180" height="180" />
               </div>
               <div class="member-info">
@@ -31,12 +31,12 @@
         {% endfor %}
       </div>
       <div class="row justify-content-center">
-       <div class="section-header text-center mb-5">
-        <br><br>
-        <h2 class="display-4 text-center mb-4">Workshops Facilitators</h2>
-        <h3 style="font-size: 1.17em; text-align: center; margin-bottom: 1.5rem; color: var(--py-green);"><strong>Learn from expert facilitators who guide you through interactive Python sessions</strong></h3>
+        <div class="section-header text-center mb-5">
+          <br /><br />
+          <h2 class="display-4 text-center mb-4">Workshops Facilitators</h2>
+          <h3 style="font-size: 1.17em; text-align: center; margin-bottom: 1.5rem; color: var(--py-green);"><strong>Learn from expert facilitators who guide you through interactive Python sessions</strong></h3>
+        </div>
       </div>
-
     </div>
   </section>
 
@@ -48,47 +48,47 @@
       height: 90%;
       border-left: 2px solid #e9ecef;
     }
-
+    
     .timeline-icon {
       position: relative;
       z-index: 1;
     }
-
+    
     .speaker-guidelines {
       padding: 2rem;
       background-color: #fff;
       border-radius: 8px;
     }
-
+    
     .guidelines-list {
       margin: 0;
       padding: 0;
     }
-
+    
     .guideline-item {
       padding: 1rem;
       border-left: 3px solid var(--py-green);
       background-color: white;
       border-radius: 0 8px 8px 0;
     }
-
+    
     .guideline-title {
       color: var(--py-green);
       font-size: 1.1rem;
       margin-bottom: 0.5rem;
     }
-
+    
     .guideline-content {
       color: #6c757d;
       margin-bottom: 0;
       line-height: 1.6;
     }
-
+    
     .badge {
       font-weight: normal;
       font-size: 0.8rem;
     }
-
+    
     .member-info p {
       font-size: 0.9rem;
       margin-top: 0.5rem;
