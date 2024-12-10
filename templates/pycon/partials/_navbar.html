@@ -23,7 +23,7 @@
           <a class="nav-link {% if request.resolver_match.view_name == 'coc' %}active{% endif %}" href="{% url 'coc' %}">Code Of Conduct</a>
         </li>
         <li>
-          <a href="https://wa.me/message/2DW2QWGHDACTM1"><button class="btn btn-primary">Buy Tickets</button></a>
+          {% comment %} <a href="https://wa.me/message/2DW2QWGHDACTM1"><button class="btn btn-primary">Buy Tickets</button></a> {% endcomment %}
         </li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
