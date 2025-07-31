@@ -477,7 +477,7 @@ section {
 #hero {
     width: 100%;
     height: 100vh !important;
-    background: url("/static/images/2024/hero.png") top center;
+    /* background: url("/static/images/2024/hero.png") top center; */
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -488,6 +488,10 @@ section {
     #hero {
         background-position: center -120px;
     }
+}
+
+w-full {
+    width: 100%;
 }
 
 #hero:before {

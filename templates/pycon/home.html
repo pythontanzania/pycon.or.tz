@@ -1,23 +1,52 @@
 {% extends 'pycon/base.html' %}
 {% load static %}
 {% block content %}
-  <section id="hero" class="d-flex align-items-center justify-content-center">
+  <section id="hero" class="d-flex align-items-center justify-content-center" style="background-color: #004865;">
     <div class="container" data-aos="fade-up">
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-10 col-lg-10 text-black">
           <div class="py-4">
-            <h4 class="pill py-3 px-5 mx-auto rounded-pill" style=" max-width: 600px;">01 - 05 December, 2024 <span>.</span> Dar es Salaam</h4>
+            {% comment %} <h4 class="pill py-3 px-5 mx-auto rounded-pill" style=" max-width: 600px;">11 - 16 Aug, 2025 <span>.</span> Arusha</h4> {% endcomment %}
           </div>
 
-          <h1 class="py-3">PYCON TANZANIA<span>.</span></h1>
-          <h2>Join us for the 5th Python Conference at the <span>University of Dar es Salaam, Mlimani City Campus..</span> where Python developers, enthusiasts and learners from across East Africa will gather to share knowledge, build connections and celebrate out growing tech community.</h2>
-          {% comment %} <a href="https://wa.me/message/2DW2QWGHDACTM1" class="mt-3"><button class="btn btn-primary">Buy Tickets</button></a> {% endcomment %}
+          <h2 class="text-white py-5">Join us for 5 days of inspiration, education and networking at DjangoCon Africa from 11 - 15 August, 2025 in Arusha, Tanzania</h2>
+          <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/ohTNwfVmx0A?autoplay=1" title="DjangoCon Africa 2025 Preview" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         </div>
       </div>
     </div>
   </section>
+  <section class="container ">
+    <div class="row d-flex align-items-center justify-content-center">
+      
+      <div class="col-lg-8 col-md-12 col-sm-12 ">
+          <h3 class="mb-3 pb-5 mt-3 text-center">  Secure your spot
+         <main id="uza-container" class="mt-3">
+              <!-- UZA Live - Products Embed -->
+              <uza-products
+                  product-catalog-id=""
+                  public-api-key="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJyMFl3b0FLIiwiaWF0IjoxNzUzODc3OTUyLCJleHAiOjE3ODU0MTM5NTIsIm5iZiI6MTc1Mzg3Nzk1MiwianRpIjoiUmdMTldLcSIsInN1YiI6ZmFsc2UsImF1ZCI6IndlYmVtYmVkLnV6YS5jby50eiJ9.tn_hFJd8fmXATDa1nfFab40dmuUg8uTQYW30xotGN1Y"
+                  source="#web"
+                  refCode="#web"
+                  customer-email=""
+                  height="60vh"
+                  __locale-override="en"
+              ></uza-products>
+        </main>
+        <p class="text-center pt-5">OR</p>
+                <h3 class="mb-3 mt-3 text-center">  Purchase via WhatsApp
+              </h3>
+        <p class="mb-4 text-center">Click the link below to start your ticket purchase process on WhatsApp</p>
+<p class="text-center">
+           <a href="https://wa.me/message/2DW2QWGHDACTM1"><button class="btn btn-primary">Buy Tickets via WhatsApp</button></a>
 
-  <section id="services" class="services bg-py-green">
+</p>      </div>
+    </div>
+  </section>
+ 
+  
+  {% comment %} <section id="services" class="services bg-py-green">
     <div class="container" data-aos="fade-up">
       <div class="section-title text-center">
         <p class="text-white">Our Programme</p>
@@ -50,9 +79,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> {% endcomment %}
 
-  <section id="speakers">
+  {% comment %} <section id="speakers">
     <div class="container" data-aos="fade-up">
       <div class="row justify-content-center">
         <div class="col-12">
@@ -64,13 +93,10 @@
         </div>
         <div class="col-6 d-flex justify-content-end">
           <div>
-            {% comment %} <button class="btn btn-primary">See all Speakers</button> {% endcomment %}
           </div>
         </div>
       </div>
-      {% comment %} <div>
-        <p>Key note speakers will be updated soon</p>
-      </div> {% endcomment %}
+    
       <div class="row justify-content-center">
         <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
           <div class="member" data-aos="fade-up" data-aos-delay="100">
@@ -142,7 +168,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> {% endcomment %}
 
   {% comment %} <section class="parallax-bg" id="venue">
     <div class="row-parallax-bg">
@@ -217,4 +243,5 @@
       </div>
     </div>
   </section> {% endcomment %}
+  <script async src="https://uza.co.tz/api/downloads/js/embeddable.js"></script>
 {% endblock %}

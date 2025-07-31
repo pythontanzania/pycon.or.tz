@@ -5,7 +5,7 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
-        <li>
+        {% comment %} <li>
           <a class="nav-link {% if request.resolver_match.view_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
         </li>
         <li>
@@ -21,9 +21,9 @@
 
         <li>
           <a class="nav-link {% if request.resolver_match.view_name == 'coc' %}active{% endif %}" href="{% url 'coc' %}">Code Of Conduct</a>
-        </li>
+        </li> {% endcomment %}
         <li>
-          {% comment %} <a href="https://wa.me/message/2DW2QWGHDACTM1"><button class="btn btn-primary">Buy Tickets</button></a> {% endcomment %}
+          <a href="https://wa.me/message/2DW2QWGHDACTM1"><button class="btn btn-primary">Buy Tickets</button></a>
         </li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
