@@ -1,0 +1,78 @@
+.btn-covid {
+  padding-right: 2.5rem !important;
+  padding-left: 2.5rem !important;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  border-radius: 0;
+  background-color: transparent;
+  border: solid 5px #fff;
+  font-weight: 800;
+  color: #fff;
+  box-shadow: 0.3em 0.3em 0 0 var(--primary-color),
+    inset 0 0 0 0 var(--primary-color);
+}
+
+.btn-covid:hover,
+.btn-covid:focus {
+  box-shadow: 0 0 0 0 #fff, inset 6em 4.5em 0 0 #fff;
+  border: solid 5px var(--hover);
+  color: #000;
+}
+
+.btn-cta {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  border-radius: 0;
+  background-color: transparent;
+  border: solid 5px #000;
+  font-weight: 800;
+  box-shadow: 0.3em 0.3em 0 0 var(--primary-color),
+    inset 0 0 0 0 var(--primary-color);
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+  box-shadow: 0 0 0 0 #fff, inset 6em 3.5em 0 0 #fff000;
+  border: solid 1px var(--hover);
+  color: #fff;
+}
+
+.speaker-bg {
+  background: url("../images/x-pattern-bg.png");
+  /* height: 24rem; */
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-size: auto 100%, auto;
+  background-position: center bottom, center -50%;
+}
+
+.btn-speaker {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: solid 5px var(--primary-color);
+  font-weight: 800;
+}
+
+.btn-speaker:hover,
+.btn-speaker:focus {
+  border-bottom: solid 5px #000;
+}
+
+.newsletter {
+  border: solid 5px #000;
+  border-radius: 0;
+  color: #fff;
+}
+
+.newsletter:focus,
+.newletter:hover {
+  border: solid 5px var(--secondary-color);
+}

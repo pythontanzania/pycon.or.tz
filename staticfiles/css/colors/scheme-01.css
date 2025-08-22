@@ -1,0 +1,8 @@
+:root {
+  --primary-color: #28a745;
+  --primary-color-rgb: 40, 167, 69;
+
+  --secondary-color: #208738;
+  --secondary-color-rgb: 32, 135, 56;
+  --hover: var(--primary-color);
+}
