@@ -1,4 +1,4 @@
-name: scp files
+name: Deploy files
 on:
   push:
     branches:
