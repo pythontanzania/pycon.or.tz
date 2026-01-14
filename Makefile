@@ -7,7 +7,7 @@ help:
 lint-server:
 	ruff format --check .
 	ruff check .
-	curlylint --parse-only bakerydemo
+	curlylint --parse-only  pycon*
 	git ls-files '*.html' | xargs djhtml --check
 
 lint-client:

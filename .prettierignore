@@ -7,4 +7,6 @@ venv
 *.md
 # Files which contain incompatible syntax.
 *.html
+*.min.js
+
 staticfiles
