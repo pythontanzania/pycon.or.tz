@@ -6,6 +6,10 @@
   "env": {
     "browser": true
   },
+  "globals": {
+    "jQuery": "readonly",
+    "JQClass": "readonly"
+  },
   "rules": {
     // allow no lines between single line members (e.g. static declarations)
     "lines-between-class-members": [

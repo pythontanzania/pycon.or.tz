@@ -30,6 +30,7 @@ repos:
         additional_dependencies:
           - stylelint@15.11.0
           - stylelint-config-standard@34.0.0
+        args: ['--allow-empty-input']
   - repo: https://github.com/rtts/djhtml
     rev: 3.0.6
     hooks:

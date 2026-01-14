@@ -1,4 +1,6 @@
-((jQuery.easing.jswing = jQuery.easing.swing),
+/* eslint-disable no-redeclare */
+
+(jQuery.easing.jswing = jQuery.easing.swing),
   jQuery.extend(jQuery.easing, {
     def: 'easeOutQuad',
     swing: function (a, b, c, d, e) {
@@ -142,8 +144,7 @@
     },
     easeInBack: function (a, b, c, d, e, f) {
       return (
-        void 0 == f && (f = 1.70158),
-        d * (b /= e) * b * ((f + 1) * b - f) + c
+        void 0 == f && (f = 1.70158), d * (b /= e) * b * ((f + 1) * b - f) + c
       );
     },
     easeOutBack: function (a, b, c, d, e, f) {
@@ -179,4 +180,4 @@
             0.5 * d +
             c;
     },
-  }));
+  });
