@@ -4,35 +4,34 @@ on:
     branches:
       - master
 jobs:
-
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: copy file via ssh password
-      uses: appleboy/scp-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
-        source: "*"
-        target: "${{ secrets.TARGET }}"
-    - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
-        script: |
-          cd ${{ secrets.TARGET }}
-          source .venv/bin/activate
-          uv pip install -r requirements.txt
-          python manage.py makemigrations
-          python manage.py migrate
-          # python manage.py collectstatic -v 2 --noinput
-          deactivate
-          echo ${{ secrets.PASSWORD }} | sudo -S systemctl restart pycon.service
-          echo ${{ secrets.PASSWORD }} | sudo -S systemctl reload nginx
+      - uses: actions/checkout@master
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          source: '*'
+          target: '${{ secrets.TARGET }}'
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd ${{ secrets.TARGET }}
+            source .venv/bin/activate
+            uv pip install -r requirements.txt
+            python manage.py makemigrations
+            python manage.py migrate
+            # python manage.py collectstatic -v 2 --noinput
+            deactivate
+            echo ${{ secrets.PASSWORD }} | sudo -S systemctl restart pycon.service
+            echo ${{ secrets.PASSWORD }} | sudo -S systemctl reload nginx

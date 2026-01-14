@@ -2,5 +2,5 @@ from django.apps import AppConfig
 
 
 class PyconConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'pycon'
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "pycon"

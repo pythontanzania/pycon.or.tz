@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class PagesConfig(AppConfig):
-    name = 'pycon2021'
+    name = "pycon2021"

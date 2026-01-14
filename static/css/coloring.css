@@ -4,7 +4,7 @@ header,
 section.bg-color,
 section.call-to-action,
 #mainmenu li li a:hover,
-#mainmenu ul li:hover>a,
+#mainmenu ul li:hover > a,
 .price-row,
 .slider-info .text1,
 .btn-primary,
@@ -37,7 +37,7 @@ section.call-to-action,
 .feature-box-small-icon.style-2 .number.bg-color,
 .owl-custom-nav .btn-next:before,
 .owl-custom-nav .btn-prev:before,
-.timeline>li>.timeline-badge,
+.timeline > li > .timeline-badge,
 .de_light .de_tab.tab_style_3 .de_nav li.active span,
 .de_tab.tab_style_4 .de_nav li.active span,
 .circle,
@@ -52,7 +52,7 @@ section.call-to-action,
 .widget-post .date,
 .style-2 .date-box,
 .feature-box-type-1 i,
-.owl-item.active>div blockquote:before,
+.owl-item.active > div blockquote:before,
 .accordion-section-title:before,
 #form_subscribe #btn-submit i,
 .bg-gradient-to-right-2,
@@ -67,13 +67,13 @@ section.call-to-action,
 .social-icons i,
 .owl-item.active.center .feature-box-type-2,
 .testimonial-color .item:nth-child(1n) blockquote:before,
-.spinner>div,
+.spinner > div,
 .d-gallery-item .dgi-1,
 a.btn-border:hover,
 .dih-overlay,
 .widget_tags li a,
 .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link,
+.nav-pills .show > .nav-link,
 #cookieConsent a.cookieConsentOK,
 .mask .cover,
 .icon-box:hover,
@@ -88,14 +88,12 @@ footer,
 #selector #related-items,
 .dark-scheme .nft__item .de_countdown,
 .dropdown li span:hover,
-.de-event-item .d-date
- {
-    background: var(--primary-color);
+.de-event-item .d-date {
+  background: var(--primary-color);
 }
 
-
 .id-color,
-#mainmenu li:hover>ul,
+#mainmenu li:hover > ul,
 .date-box .day,
 .slider_text h1,
 h1.id-color,
@@ -167,10 +165,11 @@ a.btn-border.light:hover,
 a.btn-main.btn-white,
 a.bc-btn,
 .de_tab .de_nav li span,
-.nav-link, .nav-link:focus, .nav-link:hover {
-    color: var(--primary-color);
+.nav-link,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--primary-color);
 }
-
 
 a,
 a:hover,
@@ -191,16 +190,14 @@ address.s1 span i,
 .profile_username,
 .de_tab.tab_methods .de_nav li.active span img,
 .ul-style-3 li:after,
-.accordion-button:not(.collapsed)
-{
-    color: var(--secondary-color);
+.accordion-button:not(.collapsed) {
+  color: var(--secondary-color);
 }
 
 .id-color-3,
 span.id-color-3 {
-    color: var(--tertiary-color);
+  color: var(--tertiary-color);
 }
-
 
 a.btn-main,
 .btn-main,
@@ -211,7 +208,7 @@ a.btn-main,
 a.btn-main.bg-color-2,
 a.btn-main.invert,
 #mainmenu li li a:hover,
-#mainmenu ul li:hover>a,
+#mainmenu ul li:hover > a,
 .icon-box.invert:hover,
 #form_subscribe #btn-subscribe i.bg-color-secondary,
 #jpreBar,
@@ -219,12 +216,12 @@ a.btn-main.invert,
 #back-to-top,
 .nft_item_pp i,
 .author_list_pp i,
-.pagination>.active>a,
-.pagination>.active>span,
-.pagination>.active>a:hover,
-.pagination>.active>span:hover,
-.pagination>.active>a:focus,
-.pagination>.active>span:focus,
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus,
 .nft_coll_pp i,
 .profile_avatar i,
 #btn_copy.clicked,
@@ -238,29 +235,29 @@ a.btn-main.invert,
 a.btn-line:hover,
 .btn-line.hover,
 a.btn-line.hover,
-.de_form input[type="checkbox"]:checked + label:before,
+.de_form input[type='checkbox']:checked + label:before,
 .coll_list_pp i,
 #form_sb #btn-submit i,
-.de-switch input[type=checkbox]:checked + label,
+.de-switch input[type='checkbox']:checked + label,
 .nft__item_extra button:hover,
 .nft__item_share a,
 .de-card .de-price span,
 .de-circle-1,
 .de-color-icons i {
-    background: var(--secondary-color);
+  background: var(--secondary-color);
 }
 
 section.dark {
-    background: rgba(var(--primary-color-rgb), .98);
+  background: rgba(var(--primary-color-rgb), 0.98);
 }
 
 .bg-color-3,
 a.btn-main.bg-color-3 {
-    background: var(--tertiary-color);
+  background: var(--tertiary-color);
 }
 
 .feature-box-group .feature-box-type-1 i {
-    background: var(--secondary-color);
+  background: var(--secondary-color);
 }
 
 header.smaller,
@@ -277,74 +274,140 @@ header.header-gradient,
 .ribbon.s2,
 .table-pricing,
 .box-highlight {
-    background: var(--primary-color);
+  background: var(--primary-color);
 }
 
-
 .bg-gradient-to-top-right {
-    background: linear-gradient(to top right, var(--primary-color), var(--primary-color-2));
+  background: linear-gradient(
+    to top right,
+    var(--primary-color),
+    var(--primary-color-2)
+  );
 }
 
 .feature-box-type-1 i,
 #preloader {
-    background-image: linear-gradient(to top right, var(--primary-color), var(--primary-color-2));
+  background-image: linear-gradient(
+    to top right,
+    var(--primary-color),
+    var(--primary-color-2)
+  );
 }
 
 .overlay-gradient {
-    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.9) 0%, rgba(var(--primary-color-2-rgb), 0.9) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.9) 0%, rgba(var(--primary-color-2-rgb), 0.9) 100%);
-    background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.9) 0%, rgba(var(--primary-color-2-rgb), 0.9) 100%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.9) 0%,
+    rgba(var(--primary-color-2-rgb), 0.9) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.9) 0%,
+    rgba(var(--primary-color-2-rgb), 0.9) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.9) 0%,
+    rgba(var(--primary-color-2-rgb), 0.9) 100%
+  );
 }
 
 .overlay-gradient.t80 {
-    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.8) 0%, rgba(var(--primary-color-2-rgb), 0.8) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.8) 0%, rgba(var(--primary-color-2-rgb), 0.8) 100%);
-    background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.8) 0%, rgba(var(--primary-color-2-rgb), 0.8) 100%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.8) 0%,
+    rgba(var(--primary-color-2-rgb), 0.8) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.8) 0%,
+    rgba(var(--primary-color-2-rgb), 0.8) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.8) 0%,
+    rgba(var(--primary-color-2-rgb), 0.8) 100%
+  );
 }
 
 .overlay-gradient.t70 {
-    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.7) 0%, rgba(var(--primary-color-2-rgb), 0.7) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.7) 0%, rgba(var(--primary-color-2-rgb), 0.7) 100%);
-    background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.7) 0%, rgba(var(--primary-color-2-rgb), 0.7) 100%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.7) 0%,
+    rgba(var(--primary-color-2-rgb), 0.7) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.7) 0%,
+    rgba(var(--primary-color-2-rgb), 0.7) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.7) 0%,
+    rgba(var(--primary-color-2-rgb), 0.7) 100%
+  );
 }
 
 .overlay-gradient.t60 {
-    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.6) 0%, rgba(var(--primary-color-2-rgb), 0.6) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.6) 0%, rgba(var(--primary-color-2-rgb), 0.6) 100%);
-    background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.6) 0%, rgba(var(--primary-color-2-rgb), 0.6) 100%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.6) 0%,
+    rgba(var(--primary-color-2-rgb), 0.6) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.6) 0%,
+    rgba(var(--primary-color-2-rgb), 0.6) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.6) 0%,
+    rgba(var(--primary-color-2-rgb), 0.6) 100%
+  );
 }
 
 .overlay-gradient.t50 {
-    background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.5) 0%, rgba(var(--primary-color-2-rgb), 0.5) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.5) 0%, rgba(var(--primary-color-2-rgb), 0.5) 100%);
-    background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.5) 0%, rgba(var(--primary-color-2-rgb), 0.5) 100%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.5) 0%,
+    rgba(var(--primary-color-2-rgb), 0.5) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.5) 0%,
+    rgba(var(--primary-color-2-rgb), 0.5) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(var(--primary-color-rgb), 0.5) 0%,
+    rgba(var(--primary-color-2-rgb), 0.5) 100%
+  );
 }
 
 .all-timelines::before {
-    background: rgba(var(--secondary-color-rgb), .3);
+  background: rgba(var(--secondary-color-rgb), 0.3);
 }
 
-.activity-list li:after{
-    color: rgba(var(--secondary-color-rgb), 1);
+.activity-list li:after {
+  color: rgba(var(--secondary-color-rgb), 1);
 }
 
-.item_info_counts>div,
+.item_info_counts > div,
 .de_table .tr .td:nth-child(2) span,
 .activity-filter i,
 .accordion-button:not(.collapsed) {
-    background: rgba(var(--secondary-color-rgb), .1);
+  background: rgba(var(--secondary-color-rgb), 0.1);
 }
 
-.activity-list li{
-    background: rgba(var(--secondary-color-rgb), .07);
+.activity-list li {
+  background: rgba(var(--secondary-color-rgb), 0.07);
 }
-
 
 a.btn-border.btn-invert,
 .small-border,
 .icon-box,
 #slider-carousel .owl-thumb-item.active img {
-    border-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .de_countdown,
@@ -352,81 +415,84 @@ a.btn-border.btn-invert,
 .de_tab.tab_methods .de_nav li.active span,
 .dark-scheme .pagination li.active a,
 .de-circle-2 {
-    border-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
-.author_list_pp:hover img{
-    -webkit-box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
-    -moz-box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
-    box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
+.author_list_pp:hover img {
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
+  -moz-box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
+  box-shadow: 0px 0px 0px 2px rgba(var(--secondary-color-rgb), 1);
 }
 
-.form-border input[type=text]:focus,
+.form-border input[type='text']:focus,
 .form-border textarea:focus,
-.form-underline input[type=email]:focus,
-.form-border input[type=date]:focus,
+.form-underline input[type='email']:focus,
+.form-border input[type='date']:focus,
 .form-border select:focus,
 #quick_search:hover,
 .items_filter .dropdown:hover,
-.nft__item_share a:hover{
-    webkit-box-shadow: 0px 0px 0px 4px rgba(var(--primary-color-rgb), .3);
-    -moz-box-shadow: 0px 0px 0px 4px rgba(var(--primary-color-rgb), .3);
-    box-shadow: 0px 0px 0px 4px rgba(var(--primary-color-rgb), .3);
+.nft__item_share a:hover {
+  webkit-box-shadow: 0px 0px 0px 4px rgba(var(--primary-color-rgb), 0.3);
+  -moz-box-shadow: 0px 0px 0px 4px rgba(var(--primary-color-rgb), 0.3);
+  box-shadow: 0px 0px 0px 4px rgba(var(--primary-color-rgb), 0.3);
 }
 
 .container-timeline ul li,
 blockquote {
-    border-left-color: var(--primary-color);
+  border-left-color: var(--primary-color);
 }
 
-.de_tab.tab_simple .de_nav li.active span{
-    border-bottom-color: var(--primary-color);
+.de_tab.tab_simple .de_nav li.active span {
+  border-bottom-color: var(--primary-color);
 }
 
 header #mainmenu a span,
 header.transparent #mainmenu a span,
 .de-grey #subheader h1 {
-    border-bottom-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
 }
 
 .header-light #quick_search {
-    background: rgba(var(--primary-color-rgb), .1);
+  background: rgba(var(--primary-color-rgb), 0.1);
 }
 
 .container-timeline ul li {
-    border-top-color: var(--secondary-color);
+  border-top-color: var(--secondary-color);
 }
 
 .line-preloader .p-line:nth-child(1) {
-    border-right-color: var(--secondary-color);
-    border-bottom-color: var(--secondary-color);
+  border-right-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
 }
 
 .line-preloader .p-line:nth-child(2) {
-    border-left-color: var(--secondary-color);
-    border-top-color: var(--secondary-color);
+  border-left-color: var(--secondary-color);
+  border-top-color: var(--secondary-color);
 }
 
 .line-preloader .p-line:nth-child(3) {
-    border-right-color: var(--secondary-color);
-    border-top-color: var(--secondary-color);
+  border-right-color: var(--secondary-color);
+  border-top-color: var(--secondary-color);
 }
 
-.de-event-item .d-shadow{
-    border-color: transparent transparent transparent var(--secondary-color);;
+.de-event-item .d-shadow {
+  border-color: transparent transparent transparent var(--secondary-color);
 }
 
 .preloader1 {
-    width: 60px;
-    border-top-color: rgba(var(--primary-color-rgb), 0.65);
-    border-bottom-color: rgba(var(--primary-color-rgb), 0.1);
-    border-left-color: rgba(var(--primary-color-rgb), 0.1);
-    border-right-color: rgba(var(--primary-color-rgb), 0.1);
+  width: 60px;
+  border-top-color: rgba(var(--primary-color-rgb), 0.65);
+  border-bottom-color: rgba(var(--primary-color-rgb), 0.1);
+  border-left-color: rgba(var(--primary-color-rgb), 0.1);
+  border-right-color: rgba(var(--primary-color-rgb), 0.1);
 }
 
 @media only screen and (max-width: 992px) {
-    .table-pricing tbody tr th {
-        background-image: linear-gradient(to right, var(--primary-color), var(--primary-color-2));
-    }
-
+  .table-pricing tbody tr th {
+    background-image: linear-gradient(
+      to right,
+      var(--primary-color),
+      var(--primary-color-2)
+    );
+  }
 }

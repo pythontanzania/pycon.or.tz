@@ -16,7 +16,7 @@ urlpatterns = [
 
 
 urlpatterns += [
-    path('media/<path:path>', serve, {'document_root': settings.MEDIA_ROOT}),
+    path("media/<path:path>", serve, {"document_root": settings.MEDIA_ROOT}),
 ]
 # if settings.DEBUG:
 #     import debug_toolbar
